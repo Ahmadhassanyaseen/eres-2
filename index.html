@@ -243,12 +243,13 @@
     #home-xeno-main-bg {
       position: absolute;
       width: 100%;
-      height: 100%;
-      top: 0;
+      height: 80%;
+      top: 120px;
       left: 0;
-      background: url("assets/img/bg/main_bg.jpg");
+      background: url(assets/img/bg/main_bg.jpg);
       background-size: cover;
       background-position: right;
+      background-repeat: no-repeat;
     }
   </style>
 
@@ -305,7 +306,12 @@
                     <li><a href="#home-xeno-main">Home</a></li>
                     <li><a href="#about-xeno">About Us</a></li>
                     <li><a href="#team-xeno">Team</a></li>
-                    <li><a href="#service-xeno">Products & Services</a></li>
+                    <li>
+                      <a href="#service-xeno"
+                        >Products & <br />
+                        Services</a
+                      >
+                    </li>
                     <li><a href="#news-xeno">News</a></li>
                     <li><a href="#contact-xeno">Contact Us</a></li>
                     <li>
@@ -379,6 +385,148 @@
         </div>
       </div>
     </div>
+
+    <div class="container companyLogoSlider">
+      <div class="slider-area text-center">
+        <div
+          class="swiper th-slider swiper-initialized swiper-horizontal"
+          data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-e2cd82cbb71091d95"
+            aria-live="off"
+          >
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="1 / 12"
+              data-swiper-slide-index="0"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_1.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="2 / 12"
+              data-swiper-slide-index="1"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_2.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-prev"
+              role="group"
+              aria-label="3 / 12"
+              data-swiper-slide-index="2"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_3.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="4 / 12"
+              data-swiper-slide-index="3"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_4.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-next"
+              role="group"
+              aria-label="5 / 12"
+              data-swiper-slide-index="4"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_5.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="6 / 12"
+              data-swiper-slide-index="5"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_6.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="7 / 12"
+              data-swiper-slide-index="6"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_1.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="8 / 12"
+              data-swiper-slide-index="7"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_2.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="9 / 12"
+              data-swiper-slide-index="8"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_3.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="10 / 12"
+              data-swiper-slide-index="9"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_4.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="11 / 12"
+              data-swiper-slide-index="10"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_5.svg" alt="Brand Logo" />
+              </div>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="12 / 12"
+              data-swiper-slide-index="11"
+            >
+              <div class="brand-box">
+                <img src="assets/img/brand/brand_3_6.svg" alt="Brand Logo" />
+              </div>
+            </div>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+      </div>
+    </div>
+
     <div class="space" id="about-xeno">
       <div class="container">
         <div class="row align-items-center">
@@ -498,7 +646,9 @@
                         </div>
                         <div class="testi-grid_review"></div>
                         <div class="testi-grid_content">
-                          <h3 class="box-title">Richard Howard</h3>
+                          <h3 class="box-title">
+                            Richard Howard <span>(MSc Adv Net)</span>
+                          </h3>
                           <p class="testi-grid_desig">MD & Co-Founder</p>
                           <div class="checklist style2">
                             <ul>
@@ -523,8 +673,6 @@
                               </li>
                             </ul>
                           </div>
-
-                         
                         </div>
                       </div>
                     </div>
@@ -566,8 +714,6 @@
                               </li>
                             </ul>
                           </div>
-
-                         
                         </div>
                       </div>
                     </div>
@@ -824,1399 +970,1142 @@
         >
           <div class="text-center">
             <div class="title-area text-center">
-              <span class="sub-title"><div class="icon-masking me-2">
-                  <span class="mask-icon bg-mask" style="
+              <span class="sub-title"
+                ><div class="icon-masking me-2">
+                  <span
+                    class="mask-icon bg-mask"
+                    style="
                       mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                    "></span>
-                  <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                    "
+                  ></span>
+                  <img
+                    src="assets/img/theme-img/title_shape_1.svg"
+                    alt="shape"
+                  />
                 </div>
-                Services</span>
+                Services</span
+              >
               <h2 class="sec-title">
                 Share the joy of achieving glorious moments
               </h2>
             </div>
           </div>
-          <div
-            class="choose-tabs-wrapper xeno-tabs-wrapper xeno-tabs-wrapper-2"
-          >
-          <div
-              class="nav nav-tabs choose-tabs-tabs"
-              id="nav-tab"
-              role="tablist"
-            >
-              <button
-                class="nav-link active"
-                id="nav-step11-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-step11"
-                type="button"
-              >
-                <div class="service-box">
-                  <div class="service-box_img">
-                    <img
-                      src="assets/img/service/Software Development.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <div class="service-box_content">
-                    <div class="service-box_icon">
-                      <img src="assets/img/icon/service_box_1.svg" alt="Icon" />
-                    </div>
-                    <h3 class="box-title">
-                      <a href="#">Software<br />Development</a>
-                    </h3>
-                    <p class="service-box_text">
-                      Custom-built software solutions designed to streamline
-                      your business operations and improve efficiency.
-                    </p>
-                    <!--<a href="#" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>-->
-                    <div class="bg-shape">
-                      <img src="assets/img/bg/service_box_bg.png" alt="bg" />
-                    </div>
-                  </div>
-                </div>
-              </button>
-              <button
-                class="nav-link"
-                id="nav-step12-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-step12"
-                type="button"
-              >
-                <div class="service-box">
-                  <div class="service-box_img">
-                    <img
-                      src="assets/img/service/Software Development.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <div class="service-box_content">
-                    <div class="service-box_icon">
-                      <img src="assets/img/icon/service_box_1.svg" alt="Icon" />
-                    </div>
-                    <h3 class="box-title">
-                      <a href="#">Software<br />Development</a>
-                    </h3>
-                    <p class="service-box_text">
-                      Custom-built software solutions designed to streamline
-                      your business operations and improve efficiency.
-                    </p>
-                    <!--<a href="#" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>-->
-                    <div class="bg-shape">
-                      <img src="assets/img/bg/service_box_bg.png" alt="bg" />
-                    </div>
-                  </div>
-                </div>
-              </button>
-              <button
-                class="nav-link"
-                id="nav-step13-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-step13"
-                type="button"
-              >
-                <div class="service-box">
-                  <div class="service-box_img">
-                    <img
-                      src="assets/img/service/Software Development.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <div class="service-box_content">
-                    <div class="service-box_icon">
-                      <img src="assets/img/icon/service_box_1.svg" alt="Icon" />
-                    </div>
-                    <h3 class="box-title">
-                      <a href="#">Software<br />Development</a>
-                    </h3>
-                    <p class="service-box_text">
-                      Custom-built software solutions designed to streamline
-                      your business operations and improve efficiency.
-                    </p>
-                    <!--<a href="#" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>-->
-                    <div class="bg-shape">
-                      <img src="assets/img/bg/service_box_bg.png" alt="bg" />
-                    </div>
-                  </div>
-                </div>
-              </button>
-              <button
-                class="nav-link"
-                id="nav-step14-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-step14"
-                type="button"
-              >
-                <div class="service-box">
-                  <div class="service-box_img">
-                    <img
-                      src="assets/img/service/Software Development.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <div class="service-box_content">
-                    <div class="service-box_icon">
-                      <img src="assets/img/icon/service_box_1.svg" alt="Icon" />
-                    </div>
-                    <h3 class="box-title">
-                      <a href="#">Software<br />Development</a>
-                    </h3>
-                    <p class="service-box_text">
-                      Custom-built software solutions designed to streamline
-                      your business operations and improve efficiency.
-                    </p>
-                    <!--<a href="#" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>-->
-                    <div class="bg-shape">
-                      <img src="assets/img/bg/service_box_bg.png" alt="bg" />
-                    </div>
-                  </div>
-                </div>
-              </button>
-            </div>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade nav-step11 active show" id="nav-step11" role="tabpanel">
-              <div class="step-11-left">
-                <div class="slider-area testi-grid2-area style3">
-                  <div
-                    class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden"
-                    id="testiSlide7"
-                    data-slider-options='{"effect":"slide","loop":true,"thumbs":{"swiper":".testi-grid2-thumb"},"breakpoints":{"0":{"autoHeight":true},"576":{"autoHeight":false}}}'
-                  >
-                    <div
-                      class="swiper-wrapper"
-                      id="swiper-wrapper-a219a75621ef2855"
-                      aria-live="off"
-                    >
-                      <div
-                        class="swiper-slide swiper-slide-next"
-                        role="group"
-                        aria-label="5 / 5"
-                        data-swiper-slide-index="4"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            It's fantastic to hear that your product or
-                            service is loved by customers worldwide! Positive
-                            customer feedback is a strong indicator of
-                            satisfaction and can contribute significantly to
-                            the success and reputation of a business. If
-                            you're looking to capitalize on this positive
-                            sentiment, here are a few as we expand our
-                            business topic, Positive customer feedback I'm
-                            here
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Cameron Williamson</h3>
-                              <span class="testi-card2_desig"
-                                >Disaster Recovery</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="1 / 5"
-                        data-swiper-slide-index="0"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            Over the past year, collaborating with Webteck has
-                            been a pleasure, and I can attest to their crucial
-                            role in driving the success of our IT endeavors.
-                            As a startup, finding a tech partner capable of
-                            both addressing our current requirements and
-                            scaling alongside our growth was paramount.
-                            Webteck not only met but surpassed all of our
-                            expectations,
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Michel Jane Alum</h3>
-                              <span class="testi-card2_desig"
-                                >CTO of Portfolio</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="2 / 5"
-                        data-swiper-slide-index="1"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            If you have specific questions about gathering or
-                            analyzing customer feedback, or if you're looking
-                            for general information on the importance of
-                            customer feedback, feel free to ask. Additionally,
-                            if you have a sample of customer feedback that
-                            you'd like assistance with, you can share it, and
-                            I can provide insights or suggestions based on you
-                            provide
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Alex Michel</h3>
-                              <span class="testi-card2_desig"
-                                >Founder CEO</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-prev"
-                        role="group"
-                        aria-label="3 / 5"
-                        data-swiper-slide-index="2"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            It sounds like you're expressing positive feedback
-                            or a statement about a product or service being
-                            loved by customers worldwide. If this is a
-                            statement you want to share or discuss, it's great
-                            to highlight positive feedback! Customer
-                            satisfaction and positive testimonials can be
-                            powerful assets for a product or services
-                            businesses I'm here to help!
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Jenny Wilson</h3>
-                              <span class="testi-card2_desig"
-                                >Project Manager</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-active"
-                        role="group"
-                        aria-label="4 / 5"
-                        data-swiper-slide-index="3"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            If you have a specific question or if there's more
-                            information you'd like to provide or discuss
-                            regarding your product or service being loved by
-                            customers worldwide, feel free to share more
-                            details. Whether you're looking for advice on how
-                            to leverage this positive feedback, strategies to
-                            maintain customer satisfaction, or any other
-                            related
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Savannah Nguyen</h3>
-                              <span class="testi-card2_desig"
-                                >UI/UX Designer</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- <button
-                      data-slider-prev="#testiSlide7"
-                      class="slider-arrow slider-prev"
-                      tabindex="0"
-                      aria-label="Previous slide"
-                      aria-controls="swiper-wrapper-a219a75621ef2855"
-                    >
-                      <i class="far fa-arrow-left"></i>
-                    </button> -->
-                    <!-- <button
-                      data-slider-next="#testiSlide7"
-                      class="slider-arrow slider-next"
-                      tabindex="0"
-                      aria-label="Next slide"
-                      aria-controls="swiper-wrapper-a219a75621ef2855"
-                    >
-                      <i class="far fa-arrow-right"></i></button
-                    > -->
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
-                    >
-                    </span>
-                  </div>
-                  <!-- <div class="testi-line"></div> -->
-                </div>
-              </div>
-              <div class="step-11-right">
-                <div class="">
-                  <div class="title-area mb-35">
-                    <span class="sub-title"
-                      ><div class="icon-masking me-2">
-                        <span
-                          class="mask-icon bg-mask"
-                          style="
-                            mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                          "
-                        ></span>
-                        <img
-                          src="assets/img/theme-img/title_shape_1.svg"
-                          alt="shape"
+          <div class="service-main-container">
+            <div class="choose-tabs-wrapper xeno-tabs-wrapper xeno-tabs-wrapper-2">
+              <div class="nav nav-tabs choose-tabs-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-step11-tab" data-bs-toggle="tab" data-bs-target="#nav-step11" type="button">
+                    <div class="price-box style5 th-ani">
+                      <div class="price-title-wrap">
+                        <div class="price-title-area">
+                          <img
+                          src="assets/img/icon/service_box_1.svg"
+                          alt="icon"
                         />
-                      </div>
-                      WHY CHOOSE US</span
-                    >
-                    <h2 class="sec-title">
-                      We Deal With The Aspects Professional
-                      <span class="text-theme">IT Services</span>
-                    </h2>
-                  </div>
-                  <p class="mt-n2 mb-30">
-                    Collaboratively envisioneer user friendly supply chains
-                    and cross unit imperative. Authoritativel fabricate
-                    competitive resource and holistic.
-                  </p>
-                  <div class="two-column">
-                    <div class="checklist style2">
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Big Data Analysis
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> 24/7 Online
-                          Support
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Business
-                          Improvement
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="checklist style2">
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-check"></i> High Quality
-                          Sicurity
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> 24/7 Support Team
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Easy Solutions
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-         
-            <div class="tab-pane fade nav-step11" id="nav-step12" role="tabpanel">
-              <div class="step-11-left">
-                <div class="slider-area testi-grid2-area style3">
-                  <!-- <div class="testi-indicator">
-                    <div
-                      class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
-                      data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
-                      data-slider-tab="#testiSlide1"
-                    >
-                      <div
-                        class="swiper-wrapper"
-                        id="swiper-wrapper-21174b25b14aade3"
-                        aria-live="off"
-                        
-                      >
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-active"
-                          role="group"
-                          aria-label="1 / 5"
-                          data-swiper-slide-index="0"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_1.png"
-                              alt="Image"
-                            />
+                          <div class="media-body">                          
+                            <h3 class="box-title">Software Development</h3>
                           </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-next"
-                          role="group"
-                          aria-label="2 / 5"
-                          data-swiper-slide-index="1"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_2.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible"
-                          role="group"
-                          aria-label="3 / 5"
-                          data-swiper-slide-index="2"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_3.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
-                          role="group"
-                          aria-label="4 / 5"
-                          data-swiper-slide-index="3"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_4.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible"
-                          role="group"
-                          aria-label="5 / 5"
-                          data-swiper-slide-index="4"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_5.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <span
-                        class="swiper-notification"
-                        aria-live="assertive"
-                        aria-atomic="true"
-                      ></span>
-                    </div>
-                  </div> -->
-                  <div
-                    class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden"
-                    id="testiSlide7"
-                    data-slider-options='{"effect":"slide","loop":true,"thumbs":{"swiper":".testi-grid2-thumb"},"breakpoints":{"0":{"autoHeight":true},"576":{"autoHeight":false}}}'
-                  >
-                    <div
-                      class="swiper-wrapper"
-                      id="swiper-wrapper-a219a75621ef2855"
-                      aria-live="off"
-                    >
-                      <div
-                        class="swiper-slide swiper-slide-next"
-                        role="group"
-                        aria-label="5 / 5"
-                        data-swiper-slide-index="4"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            It's fantastic to hear that your product or
-                            service is loved by customers worldwide! Positive
-                            customer feedback is a strong indicator of
-                            satisfaction and can contribute significantly to
-                            the success and reputation of a business. If
-                            you're looking to capitalize on this positive
-                            sentiment, here are a few as we expand our
-                            business topic, Positive customer feedback I'm
-                            here
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Cameron Williamson</h3>
-                              <span class="testi-card2_desig"
-                                >Disaster Recovery</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="1 / 5"
-                        data-swiper-slide-index="0"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            Over the past year, collaborating with Webteck has
-                            been a pleasure, and I can attest to their crucial
-                            role in driving the success of our IT endeavors.
-                            As a startup, finding a tech partner capable of
-                            both addressing our current requirements and
-                            scaling alongside our growth was paramount.
-                            Webteck not only met but surpassed all of our
-                            expectations,
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Michel Jane Alum</h3>
-                              <span class="testi-card2_desig"
-                                >CTO of Portfolio</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="2 / 5"
-                        data-swiper-slide-index="1"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            If you have specific questions about gathering or
-                            analyzing customer feedback, or if you're looking
-                            for general information on the importance of
-                            customer feedback, feel free to ask. Additionally,
-                            if you have a sample of customer feedback that
-                            you'd like assistance with, you can share it, and
-                            I can provide insights or suggestions based on you
-                            provide
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Alex Michel</h3>
-                              <span class="testi-card2_desig"
-                                >Founder CEO</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-prev"
-                        role="group"
-                        aria-label="3 / 5"
-                        data-swiper-slide-index="2"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            It sounds like you're expressing positive feedback
-                            or a statement about a product or service being
-                            loved by customers worldwide. If this is a
-                            statement you want to share or discuss, it's great
-                            to highlight positive feedback! Customer
-                            satisfaction and positive testimonials can be
-                            powerful assets for a product or services
-                            businesses I'm here to help!
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Jenny Wilson</h3>
-                              <span class="testi-card2_desig"
-                                >Project Manager</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-active"
-                        role="group"
-                        aria-label="4 / 5"
-                        data-swiper-slide-index="3"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            If you have a specific question or if there's more
-                            information you'd like to provide or discuss
-                            regarding your product or service being loved by
-                            customers worldwide, feel free to share more
-                            details. Whether you're looking for advice on how
-                            to leverage this positive feedback, strategies to
-                            maintain customer satisfaction, or any other
-                            related
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Savannah Nguyen</h3>
-                              <span class="testi-card2_desig"
-                                >UI/UX Designer</span
-                              >
-                            </div>
-                          </div>
-                        </div>
+                         </div>
                       </div>
                     </div>
-                    <!-- <button
-                      data-slider-prev="#testiSlide7"
-                      class="slider-arrow slider-prev"
-                      tabindex="0"
-                      aria-label="Previous slide"
-                      aria-controls="swiper-wrapper-a219a75621ef2855"
-                    >
-                      <i class="far fa-arrow-left"></i>
-                    </button> -->
-                    <!-- <button
-                      data-slider-next="#testiSlide7"
-                      class="slider-arrow slider-next"
-                      tabindex="0"
-                      aria-label="Next slide"
-                      aria-controls="swiper-wrapper-a219a75621ef2855"
-                    >
-                      <i class="far fa-arrow-right"></i></button
-                    > -->
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
-                    >
-                    </span>
-                  </div>
-                  <!-- <div class="testi-line"></div> -->
-                </div>
-              </div>
-              <div class="step-11-right">
-                <div class="">
-                  <div class="title-area mb-35">
-                    <span class="sub-title"
-                      ><div class="icon-masking me-2">
-                        <span
-                          class="mask-icon bg-mask"
-                          style="
-                            mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                          "
-                        ></span>
-                        <img
-                          src="assets/img/theme-img/title_shape_1.svg"
-                          alt="shape"
+                  </button>
+                  <button class="nav-link" id="nav-step12-tab" data-bs-toggle="tab" data-bs-target="#nav-step12" type="button">
+                    <div class="price-box style5 th-ani">
+                      <div class="price-title-wrap">
+                        <div class="price-title-area">
+                          <img
+                          src="assets/img/icon/service_box_1.svg"
+                          alt="icon"
                         />
-                      </div>
-                      WHY CHOOSE US</span
-                    >
-                    <h2 class="sec-title">
-                      We Deal With The Aspects Professional
-                      <span class="text-theme">IT Services</span>
-                    </h2>
-                  </div>
-                  <p class="mt-n2 mb-30">
-                    Collaboratively envisioneer user friendly supply chains
-                    and cross unit imperative. Authoritativel fabricate
-                    competitive resource and holistic.
-                  </p>
-                  <div class="two-column">
-                    <div class="checklist style2">
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Big Data Analysis
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> 24/7 Online
-                          Support
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Business
-                          Improvement
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="checklist style2">
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-check"></i> High Quality
-                          Sicurity
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> 24/7 Support Team
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Easy Solutions
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade nav-step11" id="nav-step13" role="tabpanel">
-              <div class="step-11-left">
-                <div class="slider-area testi-grid2-area style3">
-                  <!-- <div class="testi-indicator">
-                    <div
-                      class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
-                      data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
-                      data-slider-tab="#testiSlide1"
-                    >
-                      <div
-                        class="swiper-wrapper"
-                        id="swiper-wrapper-21174b25b14aade3"
-                        aria-live="off"
-                        
-                      >
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-active"
-                          role="group"
-                          aria-label="1 / 5"
-                          data-swiper-slide-index="0"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_1.png"
-                              alt="Image"
-                            />
+                          <div class="media-body">                          
+                            <h3 class="box-title">Software Development</h3>
                           </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-next"
-                          role="group"
-                          aria-label="2 / 5"
-                          data-swiper-slide-index="1"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_2.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible"
-                          role="group"
-                          aria-label="3 / 5"
-                          data-swiper-slide-index="2"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_3.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
-                          role="group"
-                          aria-label="4 / 5"
-                          data-swiper-slide-index="3"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_4.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible"
-                          role="group"
-                          aria-label="5 / 5"
-                          data-swiper-slide-index="4"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_5.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <span
-                        class="swiper-notification"
-                        aria-live="assertive"
-                        aria-atomic="true"
-                      ></span>
-                    </div>
-                  </div> -->
-                  <div
-                    class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden"
-                    id="testiSlide7"
-                    data-slider-options='{"effect":"slide","loop":true,"thumbs":{"swiper":".testi-grid2-thumb"},"breakpoints":{"0":{"autoHeight":true},"576":{"autoHeight":false}}}'
-                  >
-                    <div
-                      class="swiper-wrapper"
-                      id="swiper-wrapper-a219a75621ef2855"
-                      aria-live="off"
-                    >
-                      <div
-                        class="swiper-slide swiper-slide-next"
-                        role="group"
-                        aria-label="5 / 5"
-                        data-swiper-slide-index="4"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            It's fantastic to hear that your product or
-                            service is loved by customers worldwide! Positive
-                            customer feedback is a strong indicator of
-                            satisfaction and can contribute significantly to
-                            the success and reputation of a business. If
-                            you're looking to capitalize on this positive
-                            sentiment, here are a few as we expand our
-                            business topic, Positive customer feedback I'm
-                            here
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Cameron Williamson</h3>
-                              <span class="testi-card2_desig"
-                                >Disaster Recovery</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="1 / 5"
-                        data-swiper-slide-index="0"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            Over the past year, collaborating with Webteck has
-                            been a pleasure, and I can attest to their crucial
-                            role in driving the success of our IT endeavors.
-                            As a startup, finding a tech partner capable of
-                            both addressing our current requirements and
-                            scaling alongside our growth was paramount.
-                            Webteck not only met but surpassed all of our
-                            expectations,
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Michel Jane Alum</h3>
-                              <span class="testi-card2_desig"
-                                >CTO of Portfolio</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="2 / 5"
-                        data-swiper-slide-index="1"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            If you have specific questions about gathering or
-                            analyzing customer feedback, or if you're looking
-                            for general information on the importance of
-                            customer feedback, feel free to ask. Additionally,
-                            if you have a sample of customer feedback that
-                            you'd like assistance with, you can share it, and
-                            I can provide insights or suggestions based on you
-                            provide
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Alex Michel</h3>
-                              <span class="testi-card2_desig"
-                                >Founder CEO</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-prev"
-                        role="group"
-                        aria-label="3 / 5"
-                        data-swiper-slide-index="2"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            It sounds like you're expressing positive feedback
-                            or a statement about a product or service being
-                            loved by customers worldwide. If this is a
-                            statement you want to share or discuss, it's great
-                            to highlight positive feedback! Customer
-                            satisfaction and positive testimonials can be
-                            powerful assets for a product or services
-                            businesses I'm here to help!
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Jenny Wilson</h3>
-                              <span class="testi-card2_desig"
-                                >Project Manager</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-active"
-                        role="group"
-                        aria-label="4 / 5"
-                        data-swiper-slide-index="3"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            If you have a specific question or if there's more
-                            information you'd like to provide or discuss
-                            regarding your product or service being loved by
-                            customers worldwide, feel free to share more
-                            details. Whether you're looking for advice on how
-                            to leverage this positive feedback, strategies to
-                            maintain customer satisfaction, or any other
-                            related
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Savannah Nguyen</h3>
-                              <span class="testi-card2_desig"
-                                >UI/UX Designer</span
-                              >
-                            </div>
-                          </div>
-                        </div>
+                         </div>
                       </div>
                     </div>
-                    <!-- <button
-                      data-slider-prev="#testiSlide7"
-                      class="slider-arrow slider-prev"
-                      tabindex="0"
-                      aria-label="Previous slide"
-                      aria-controls="swiper-wrapper-a219a75621ef2855"
-                    >
-                      <i class="far fa-arrow-left"></i>
-                    </button> -->
-                    <!-- <button
-                      data-slider-next="#testiSlide7"
-                      class="slider-arrow slider-next"
-                      tabindex="0"
-                      aria-label="Next slide"
-                      aria-controls="swiper-wrapper-a219a75621ef2855"
-                    >
-                      <i class="far fa-arrow-right"></i></button
-                    > -->
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
-                    >
-                    </span>
-                  </div>
-                  <!-- <div class="testi-line"></div> -->
-                </div>
-              </div>
-              <div class="step-11-right">
-                <div class="">
-                  <div class="title-area mb-35">
-                    <span class="sub-title"
-                      ><div class="icon-masking me-2">
-                        <span
-                          class="mask-icon bg-mask"
-                          style="
-                            mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                          "
-                        ></span>
-                        <img
-                          src="assets/img/theme-img/title_shape_1.svg"
-                          alt="shape"
+                  </button>
+                  <button class="nav-link" id="nav-step13-tab" data-bs-toggle="tab" data-bs-target="#nav-step13" type="button">
+                    <div class="price-box style5 th-ani">
+                      <div class="price-title-wrap">
+                        <div class="price-title-area">
+                          <img
+                          src="assets/img/icon/service_box_1.svg"
+                          alt="icon"
                         />
-                      </div>
-                      WHY CHOOSE US</span
-                    >
-                    <h2 class="sec-title">
-                      We Deal With The Aspects Professional
-                      <span class="text-theme">IT Services</span>
-                    </h2>
-                  </div>
-                  <p class="mt-n2 mb-30">
-                    Collaboratively envisioneer user friendly supply chains
-                    and cross unit imperative. Authoritativel fabricate
-                    competitive resource and holistic.
-                  </p>
-                  <div class="two-column">
-                    <div class="checklist style2">
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Big Data Analysis
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> 24/7 Online
-                          Support
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Business
-                          Improvement
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="checklist style2">
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-check"></i> High Quality
-                          Sicurity
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> 24/7 Support Team
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Easy Solutions
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade nav-step11" id="nav-step14" role="tabpanel">
-              <div class="step-11-left">
-                <div class="slider-area testi-grid2-area style3">
-                  <!-- <div class="testi-indicator">
-                    <div
-                      class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
-                      data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
-                      data-slider-tab="#testiSlide1"
-                    >
-                      <div
-                        class="swiper-wrapper"
-                        id="swiper-wrapper-21174b25b14aade3"
-                        aria-live="off"
-                        
-                      >
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-active"
-                          role="group"
-                          aria-label="1 / 5"
-                          data-swiper-slide-index="0"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_1.png"
-                              alt="Image"
-                            />
+                          <div class="media-body">                          
+                            <h3 class="box-title">Software Development</h3>
                           </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-next"
-                          role="group"
-                          aria-label="2 / 5"
-                          data-swiper-slide-index="1"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_2.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible"
-                          role="group"
-                          aria-label="3 / 5"
-                          data-swiper-slide-index="2"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_3.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
-                          role="group"
-                          aria-label="4 / 5"
-                          data-swiper-slide-index="3"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_4.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="swiper-slide swiper-slide-visible"
-                          role="group"
-                          aria-label="5 / 5"
-                          data-swiper-slide-index="4"
-                          
-                        >
-                          <div class="box-img">
-                            <img
-                              src="assets/img/testimonial/testi_1_5.png"
-                              alt="Image"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <span
-                        class="swiper-notification"
-                        aria-live="assertive"
-                        aria-atomic="true"
-                      ></span>
-                    </div>
-                  </div> -->
-                  <div
-                    class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden"
-                    id="testiSlide7"
-                    data-slider-options='{"effect":"slide","loop":true,"thumbs":{"swiper":".testi-grid2-thumb"},"breakpoints":{"0":{"autoHeight":true},"576":{"autoHeight":false}}}'
-                  >
-                    <div
-                      class="swiper-wrapper"
-                      id="swiper-wrapper-a219a75621ef2855"
-                      aria-live="off"
-                    >
-                      <div
-                        class="swiper-slide swiper-slide-next"
-                        role="group"
-                        aria-label="5 / 5"
-                        data-swiper-slide-index="4"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            It's fantastic to hear that your product or
-                            service is loved by customers worldwide! Positive
-                            customer feedback is a strong indicator of
-                            satisfaction and can contribute significantly to
-                            the success and reputation of a business. If
-                            you're looking to capitalize on this positive
-                            sentiment, here are a few as we expand our
-                            business topic, Positive customer feedback I'm
-                            here
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Cameron Williamson</h3>
-                              <span class="testi-card2_desig"
-                                >Disaster Recovery</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="1 / 5"
-                        data-swiper-slide-index="0"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            Over the past year, collaborating with Webteck has
-                            been a pleasure, and I can attest to their crucial
-                            role in driving the success of our IT endeavors.
-                            As a startup, finding a tech partner capable of
-                            both addressing our current requirements and
-                            scaling alongside our growth was paramount.
-                            Webteck not only met but surpassed all of our
-                            expectations,
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Michel Jane Alum</h3>
-                              <span class="testi-card2_desig"
-                                >CTO of Portfolio</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="2 / 5"
-                        data-swiper-slide-index="1"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            If you have specific questions about gathering or
-                            analyzing customer feedback, or if you're looking
-                            for general information on the importance of
-                            customer feedback, feel free to ask. Additionally,
-                            if you have a sample of customer feedback that
-                            you'd like assistance with, you can share it, and
-                            I can provide insights or suggestions based on you
-                            provide
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Alex Michel</h3>
-                              <span class="testi-card2_desig"
-                                >Founder CEO</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-prev"
-                        role="group"
-                        aria-label="3 / 5"
-                        data-swiper-slide-index="2"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            It sounds like you're expressing positive feedback
-                            or a statement about a product or service being
-                            loved by customers worldwide. If this is a
-                            statement you want to share or discuss, it's great
-                            to highlight positive feedback! Customer
-                            satisfaction and positive testimonials can be
-                            powerful assets for a product or services
-                            businesses I'm here to help!
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Jenny Wilson</h3>
-                              <span class="testi-card2_desig"
-                                >Project Manager</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-active"
-                        role="group"
-                        aria-label="4 / 5"
-                        data-swiper-slide-index="3"
-                      >
-                        <div class="testi-card2">
-                          <p class="testi-card2_text">
-                            If you have a specific question or if there's more
-                            information you'd like to provide or discuss
-                            regarding your product or service being loved by
-                            customers worldwide, feel free to share more
-                            details. Whether you're looking for advice on how
-                            to leverage this positive feedback, strategies to
-                            maintain customer satisfaction, or any other
-                            related
-                          </p>
-                          <div class="testi-card2_profile">
-                            <div class="testi-card2_content">
-                              <h3 class="box-title">Savannah Nguyen</h3>
-                              <span class="testi-card2_desig"
-                                >UI/UX Designer</span
-                              >
-                            </div>
-                          </div>
-                        </div>
+                         </div>
                       </div>
                     </div>
-                    <!-- <button
-                      data-slider-prev="#testiSlide7"
-                      class="slider-arrow slider-prev"
-                      tabindex="0"
-                      aria-label="Previous slide"
-                      aria-controls="swiper-wrapper-a219a75621ef2855"
-                    >
-                      <i class="far fa-arrow-left"></i>
-                    </button> -->
-                    <!-- <button
-                      data-slider-next="#testiSlide7"
-                      class="slider-arrow slider-next"
-                      tabindex="0"
-                      aria-label="Next slide"
-                      aria-controls="swiper-wrapper-a219a75621ef2855"
-                    >
-                      <i class="far fa-arrow-right"></i></button
-                    > -->
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
-                    >
-                    </span>
-                  </div>
-                  <!-- <div class="testi-line"></div> -->
-                </div>
-              </div>
-              <div class="step-11-right">
-                <div class="">
-                  <div class="title-area mb-35">
-                    <span class="sub-title"
-                      ><div class="icon-masking me-2">
-                        <span
-                          class="mask-icon bg-mask"
-                          style="
-                            mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                          "
-                        ></span>
-                        <img
-                          src="assets/img/theme-img/title_shape_1.svg"
-                          alt="shape"
+                  </button>
+                  <button class="nav-link" id="nav-step14-tab" data-bs-toggle="tab" data-bs-target="#nav-step14" type="button">
+                    <div class="price-box style5 th-ani">
+                      <div class="price-title-wrap">
+                        <div class="price-title-area">
+                          <img
+                          src="assets/img/icon/service_box_1.svg"
+                          alt="icon"
                         />
+                          <div class="media-body">                          
+                            <h3 class="box-title">Software Development</h3>
+                          </div>
+                         </div>
                       </div>
-                      WHY CHOOSE US</span
-                    >
-                    <h2 class="sec-title">
-                      We Deal With The Aspects Professional
-                      <span class="text-theme">IT Services</span>
-                    </h2>
-                  </div>
-                  <p class="mt-n2 mb-30">
-                    Collaboratively envisioneer user friendly supply chains
-                    and cross unit imperative. Authoritativel fabricate
-                    competitive resource and holistic.
-                  </p>
-                  <div class="two-column">
-                    <div class="checklist style2">
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Big Data Analysis
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> 24/7 Online
-                          Support
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Business
-                          Improvement
-                        </li>
-                      </ul>
                     </div>
-                    <div class="checklist style2">
-                      <ul>
-                        <li>
-                          <i class="fa-solid fa-check"></i> High Quality
-                          Sicurity
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> 24/7 Support Team
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-check"></i> Easy Solutions
-                        </li>
-                      </ul>
+                  </button>
+                  <button class="nav-link" id="nav-step14-tab" data-bs-toggle="tab" data-bs-target="#nav-step14" type="button">
+                    <div class="price-box style5 th-ani">
+                      <div class="price-title-wrap">
+                        <div class="price-title-area">
+                          <img
+                          src="assets/img/icon/service_box_1.svg"
+                          alt="icon"
+                        />
+                          <div class="media-body">                          
+                            <h3 class="box-title">Software Development</h3>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                  </button>
+                  <button class="nav-link" id="nav-step14-tab" data-bs-toggle="tab" data-bs-target="#nav-step14" type="button">
+                    <div class="price-box style5 th-ani">
+                      <div class="price-title-wrap">
+                        <div class="price-title-area">
+                          <img
+                          src="assets/img/icon/service_box_1.svg"
+                          alt="icon"
+                        />
+                          <div class="media-body">                          
+                            <h3 class="box-title">Software Development</h3>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade nav-step11 active show" id="nav-step11" role="tabpanel">
+                  <div class="step-11-left">
+                    <div class="slider-area testi-grid2-area style3">
+                      <div class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden" id="testiSlide7" data-slider-options="{&quot;effect&quot;:&quot;slide&quot;,&quot;loop&quot;:true,&quot;thumbs&quot;:{&quot;swiper&quot;:&quot;.testi-grid2-thumb&quot;},&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;autoHeight&quot;:true},&quot;576&quot;:{&quot;autoHeight&quot;:false}}}">
+                        <div class="swiper-wrapper" id="swiper-wrapper-a219a75621ef2855" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-2072px, 0px, 0px);">
+                          
+                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                Over the past year, collaborating with Webteck has
+                                been a pleasure, and I can attest to their crucial
+                                role in driving the success of our IT endeavors.
+                                As a startup, finding a tech partner capable of
+                                both addressing our current requirements and
+                                scaling alongside our growth was paramount.
+                                Webteck not only met but surpassed all of our
+                                expectations,
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Michel Jane Alum</h3>
+                                  <span class="testi-card2_desig">CTO of Portfolio</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                If you have specific questions about gathering or
+                                analyzing customer feedback, or if you're looking
+                                for general information on the importance of
+                                customer feedback, feel free to ask. Additionally,
+                                if you have a sample of customer feedback that
+                                you'd like assistance with, you can share it, and
+                                I can provide insights or suggestions based on you
+                                provide
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Alex Michel</h3>
+                                  <span class="testi-card2_desig">Founder CEO</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                It sounds like you're expressing positive feedback
+                                or a statement about a product or service being
+                                loved by customers worldwide. If this is a
+                                statement you want to share or discuss, it's great
+                                to highlight positive feedback! Customer
+                                satisfaction and positive testimonials can be
+                                powerful assets for a product or services
+                                businesses I'm here to help!
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Jenny Wilson</h3>
+                                  <span class="testi-card2_desig">Project Manager</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                If you have a specific question or if there's more
+                                information you'd like to provide or discuss
+                                regarding your product or service being loved by
+                                customers worldwide, feel free to share more
+                                details. Whether you're looking for advice on how
+                                to leverage this positive feedback, strategies to
+                                maintain customer satisfaction, or any other
+                                related
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Savannah Nguyen</h3>
+                                  <span class="testi-card2_desig">UI/UX Designer</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                It's fantastic to hear that your product or
+                                service is loved by customers worldwide! Positive
+                                customer feedback is a strong indicator of
+                                satisfaction and can contribute significantly to
+                                the success and reputation of a business. If
+                                you're looking to capitalize on this positive
+                                sentiment, here are a few as we expand our
+                                business topic, Positive customer feedback I'm
+                                here
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Cameron Williamson</h3>
+                                  <span class="testi-card2_desig">Disaster Recovery</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div></div>
+                        <!-- <button
+                          data-slider-prev="#testiSlide7"
+                          class="slider-arrow slider-prev"
+                          tabindex="0"
+                          aria-label="Previous slide"
+                          aria-controls="swiper-wrapper-a219a75621ef2855"
+                        >
+                          <i class="far fa-arrow-left"></i>
+                        </button> -->
+                        <!-- <button
+                          data-slider-next="#testiSlide7"
+                          class="slider-arrow slider-next"
+                          tabindex="0"
+                          aria-label="Next slide"
+                          aria-controls="swiper-wrapper-a219a75621ef2855"
+                        >
+                          <i class="far fa-arrow-right"></i></button
+                        > -->
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
+                        </span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                      <!-- <div class="testi-line"></div> -->
+                    </div>
+                  </div>
+                  <div class="step-11-right">
+                    <div class="">
+                      <div class="title-area mb-35">
+                        <span class="sub-title"><div class="icon-masking me-2">
+                            <span class="mask-icon bg-mask" style="
+                                mask-image: url('assets/img/theme-img/title_shape_1.svg');
+                              "></span>
+                            <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                          </div>
+                          WHY CHOOSE US</span>
+                        <h2 class="sec-title">
+                          We Deal With The Aspects Professional
+                          <span class="text-theme">IT Services</span>
+                        </h2>
+                      </div>
+                      <p class="mt-n2 mb-30">
+                        Collaboratively envisioneer user friendly supply chains
+                        and cross unit imperative. Authoritativel fabricate
+                        competitive resource and holistic.
+                      </p>
+                      <div class="two-column">
+                        <div class="checklist style2">
+                          <ul>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Big Data Analysis
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> 24/7 Online
+                              Support
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Business
+                              Improvement
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="checklist style2">
+                          <ul>
+                            <li>
+                              <i class="fa-solid fa-check"></i> High Quality
+                              Sicurity
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> 24/7 Support Team
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Easy Solutions
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             
+                <div class="tab-pane fade nav-step11" id="nav-step12" role="tabpanel">
+                  <div class="step-11-left">
+                    <div class="slider-area testi-grid2-area style3">
+                      <!-- <div class="testi-indicator">
+                        <div
+                          class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
+                          data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
+                          data-slider-tab="#testiSlide1"
+                        >
+                          <div
+                            class="swiper-wrapper"
+                            id="swiper-wrapper-21174b25b14aade3"
+                            aria-live="off"
+                            
+                          >
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-active"
+                              role="group"
+                              aria-label="1 / 5"
+                              data-swiper-slide-index="0"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_1.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-next"
+                              role="group"
+                              aria-label="2 / 5"
+                              data-swiper-slide-index="1"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_2.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible"
+                              role="group"
+                              aria-label="3 / 5"
+                              data-swiper-slide-index="2"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_3.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
+                              role="group"
+                              aria-label="4 / 5"
+                              data-swiper-slide-index="3"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_4.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible"
+                              role="group"
+                              aria-label="5 / 5"
+                              data-swiper-slide-index="4"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_5.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <span
+                            class="swiper-notification"
+                            aria-live="assertive"
+                            aria-atomic="true"
+                          ></span>
+                        </div>
+                      </div> -->
+                      <div class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden" id="testiSlide7" data-slider-options="{&quot;effect&quot;:&quot;slide&quot;,&quot;loop&quot;:true,&quot;thumbs&quot;:{&quot;swiper&quot;:&quot;.testi-grid2-thumb&quot;},&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;autoHeight&quot;:true},&quot;576&quot;:{&quot;autoHeight&quot;:false}}}">
+                        <div class="swiper-wrapper" id="swiper-wrapper-a219a75621ef2855" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-518px, 0px, 0px);">
+                          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                It's fantastic to hear that your product or
+                                service is loved by customers worldwide! Positive
+                                customer feedback is a strong indicator of
+                                satisfaction and can contribute significantly to
+                                the success and reputation of a business. If
+                                you're looking to capitalize on this positive
+                                sentiment, here are a few as we expand our
+                                business topic, Positive customer feedback I'm
+                                here
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Cameron Williamson</h3>
+                                  <span class="testi-card2_desig">Disaster Recovery</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                Over the past year, collaborating with Webteck has
+                                been a pleasure, and I can attest to their crucial
+                                role in driving the success of our IT endeavors.
+                                As a startup, finding a tech partner capable of
+                                both addressing our current requirements and
+                                scaling alongside our growth was paramount.
+                                Webteck not only met but surpassed all of our
+                                expectations,
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Michel Jane Alum</h3>
+                                  <span class="testi-card2_desig">CTO of Portfolio</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                If you have specific questions about gathering or
+                                analyzing customer feedback, or if you're looking
+                                for general information on the importance of
+                                customer feedback, feel free to ask. Additionally,
+                                if you have a sample of customer feedback that
+                                you'd like assistance with, you can share it, and
+                                I can provide insights or suggestions based on you
+                                provide
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Alex Michel</h3>
+                                  <span class="testi-card2_desig">Founder CEO</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                It sounds like you're expressing positive feedback
+                                or a statement about a product or service being
+                                loved by customers worldwide. If this is a
+                                statement you want to share or discuss, it's great
+                                to highlight positive feedback! Customer
+                                satisfaction and positive testimonials can be
+                                powerful assets for a product or services
+                                businesses I'm here to help!
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Jenny Wilson</h3>
+                                  <span class="testi-card2_desig">Project Manager</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                If you have a specific question or if there's more
+                                information you'd like to provide or discuss
+                                regarding your product or service being loved by
+                                customers worldwide, feel free to share more
+                                details. Whether you're looking for advice on how
+                                to leverage this positive feedback, strategies to
+                                maintain customer satisfaction, or any other
+                                related
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Savannah Nguyen</h3>
+                                  <span class="testi-card2_desig">UI/UX Designer</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <button
+                          data-slider-prev="#testiSlide7"
+                          class="slider-arrow slider-prev"
+                          tabindex="0"
+                          aria-label="Previous slide"
+                          aria-controls="swiper-wrapper-a219a75621ef2855"
+                        >
+                          <i class="far fa-arrow-left"></i>
+                        </button> -->
+                        <!-- <button
+                          data-slider-next="#testiSlide7"
+                          class="slider-arrow slider-next"
+                          tabindex="0"
+                          aria-label="Next slide"
+                          aria-controls="swiper-wrapper-a219a75621ef2855"
+                        >
+                          <i class="far fa-arrow-right"></i></button
+                        > -->
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
+                        </span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                      <!-- <div class="testi-line"></div> -->
+                    </div>
+                  </div>
+                  <div class="step-11-right">
+                    <div class="">
+                      <div class="title-area mb-35">
+                        <span class="sub-title"><div class="icon-masking me-2">
+                            <span class="mask-icon bg-mask" style="
+                                mask-image: url('assets/img/theme-img/title_shape_1.svg');
+                              "></span>
+                            <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                          </div>
+                          WHY CHOOSE US</span>
+                        <h2 class="sec-title">
+                          We Deal With The Aspects Professional
+                          <span class="text-theme">IT Services</span>
+                        </h2>
+                      </div>
+                      <p class="mt-n2 mb-30">
+                        Collaboratively envisioneer user friendly supply chains
+                        and cross unit imperative. Authoritativel fabricate
+                        competitive resource and holistic.
+                      </p>
+                      <div class="two-column">
+                        <div class="checklist style2">
+                          <ul>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Big Data Analysis
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> 24/7 Online
+                              Support
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Business
+                              Improvement
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="checklist style2">
+                          <ul>
+                            <li>
+                              <i class="fa-solid fa-check"></i> High Quality
+                              Sicurity
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> 24/7 Support Team
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Easy Solutions
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade nav-step11" id="nav-step13" role="tabpanel">
+                  <div class="step-11-left">
+                    <div class="slider-area testi-grid2-area style3">
+                      <!-- <div class="testi-indicator">
+                        <div
+                          class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
+                          data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
+                          data-slider-tab="#testiSlide1"
+                        >
+                          <div
+                            class="swiper-wrapper"
+                            id="swiper-wrapper-21174b25b14aade3"
+                            aria-live="off"
+                            
+                          >
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-active"
+                              role="group"
+                              aria-label="1 / 5"
+                              data-swiper-slide-index="0"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_1.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-next"
+                              role="group"
+                              aria-label="2 / 5"
+                              data-swiper-slide-index="1"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_2.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible"
+                              role="group"
+                              aria-label="3 / 5"
+                              data-swiper-slide-index="2"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_3.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
+                              role="group"
+                              aria-label="4 / 5"
+                              data-swiper-slide-index="3"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_4.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible"
+                              role="group"
+                              aria-label="5 / 5"
+                              data-swiper-slide-index="4"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_5.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <span
+                            class="swiper-notification"
+                            aria-live="assertive"
+                            aria-atomic="true"
+                          ></span>
+                        </div>
+                      </div> -->
+                      <div class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden" id="testiSlide7" data-slider-options="{&quot;effect&quot;:&quot;slide&quot;,&quot;loop&quot;:true,&quot;thumbs&quot;:{&quot;swiper&quot;:&quot;.testi-grid2-thumb&quot;},&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;autoHeight&quot;:true},&quot;576&quot;:{&quot;autoHeight&quot;:false}}}">
+                        <div class="swiper-wrapper" id="swiper-wrapper-a219a75621ef2855" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-518px, 0px, 0px);">
+                          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                It's fantastic to hear that your product or
+                                service is loved by customers worldwide! Positive
+                                customer feedback is a strong indicator of
+                                satisfaction and can contribute significantly to
+                                the success and reputation of a business. If
+                                you're looking to capitalize on this positive
+                                sentiment, here are a few as we expand our
+                                business topic, Positive customer feedback I'm
+                                here
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Cameron Williamson</h3>
+                                  <span class="testi-card2_desig">Disaster Recovery</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                Over the past year, collaborating with Webteck has
+                                been a pleasure, and I can attest to their crucial
+                                role in driving the success of our IT endeavors.
+                                As a startup, finding a tech partner capable of
+                                both addressing our current requirements and
+                                scaling alongside our growth was paramount.
+                                Webteck not only met but surpassed all of our
+                                expectations,
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Michel Jane Alum</h3>
+                                  <span class="testi-card2_desig">CTO of Portfolio</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                If you have specific questions about gathering or
+                                analyzing customer feedback, or if you're looking
+                                for general information on the importance of
+                                customer feedback, feel free to ask. Additionally,
+                                if you have a sample of customer feedback that
+                                you'd like assistance with, you can share it, and
+                                I can provide insights or suggestions based on you
+                                provide
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Alex Michel</h3>
+                                  <span class="testi-card2_desig">Founder CEO</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                It sounds like you're expressing positive feedback
+                                or a statement about a product or service being
+                                loved by customers worldwide. If this is a
+                                statement you want to share or discuss, it's great
+                                to highlight positive feedback! Customer
+                                satisfaction and positive testimonials can be
+                                powerful assets for a product or services
+                                businesses I'm here to help!
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Jenny Wilson</h3>
+                                  <span class="testi-card2_desig">Project Manager</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                If you have a specific question or if there's more
+                                information you'd like to provide or discuss
+                                regarding your product or service being loved by
+                                customers worldwide, feel free to share more
+                                details. Whether you're looking for advice on how
+                                to leverage this positive feedback, strategies to
+                                maintain customer satisfaction, or any other
+                                related
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Savannah Nguyen</h3>
+                                  <span class="testi-card2_desig">UI/UX Designer</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <button
+                          data-slider-prev="#testiSlide7"
+                          class="slider-arrow slider-prev"
+                          tabindex="0"
+                          aria-label="Previous slide"
+                          aria-controls="swiper-wrapper-a219a75621ef2855"
+                        >
+                          <i class="far fa-arrow-left"></i>
+                        </button> -->
+                        <!-- <button
+                          data-slider-next="#testiSlide7"
+                          class="slider-arrow slider-next"
+                          tabindex="0"
+                          aria-label="Next slide"
+                          aria-controls="swiper-wrapper-a219a75621ef2855"
+                        >
+                          <i class="far fa-arrow-right"></i></button
+                        > -->
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
+                        </span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                      <!-- <div class="testi-line"></div> -->
+                    </div>
+                  </div>
+                  <div class="step-11-right">
+                    <div class="">
+                      <div class="title-area mb-35">
+                        <span class="sub-title"><div class="icon-masking me-2">
+                            <span class="mask-icon bg-mask" style="
+                                mask-image: url('assets/img/theme-img/title_shape_1.svg');
+                              "></span>
+                            <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                          </div>
+                          WHY CHOOSE US</span>
+                        <h2 class="sec-title">
+                          We Deal With The Aspects Professional
+                          <span class="text-theme">IT Services</span>
+                        </h2>
+                      </div>
+                      <p class="mt-n2 mb-30">
+                        Collaboratively envisioneer user friendly supply chains
+                        and cross unit imperative. Authoritativel fabricate
+                        competitive resource and holistic.
+                      </p>
+                      <div class="two-column">
+                        <div class="checklist style2">
+                          <ul>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Big Data Analysis
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> 24/7 Online
+                              Support
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Business
+                              Improvement
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="checklist style2">
+                          <ul>
+                            <li>
+                              <i class="fa-solid fa-check"></i> High Quality
+                              Sicurity
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> 24/7 Support Team
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Easy Solutions
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade nav-step11" id="nav-step14" role="tabpanel">
+                  <div class="step-11-left">
+                    <div class="slider-area testi-grid2-area style3">
+                      <!-- <div class="testi-indicator">
+                        <div
+                          class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
+                          data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
+                          data-slider-tab="#testiSlide1"
+                        >
+                          <div
+                            class="swiper-wrapper"
+                            id="swiper-wrapper-21174b25b14aade3"
+                            aria-live="off"
+                            
+                          >
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-active"
+                              role="group"
+                              aria-label="1 / 5"
+                              data-swiper-slide-index="0"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_1.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-next"
+                              role="group"
+                              aria-label="2 / 5"
+                              data-swiper-slide-index="1"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_2.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible"
+                              role="group"
+                              aria-label="3 / 5"
+                              data-swiper-slide-index="2"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_3.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
+                              role="group"
+                              aria-label="4 / 5"
+                              data-swiper-slide-index="3"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_4.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="swiper-slide swiper-slide-visible"
+                              role="group"
+                              aria-label="5 / 5"
+                              data-swiper-slide-index="4"
+                              
+                            >
+                              <div class="box-img">
+                                <img
+                                  src="assets/img/testimonial/testi_1_5.png"
+                                  alt="Image"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <span
+                            class="swiper-notification"
+                            aria-live="assertive"
+                            aria-atomic="true"
+                          ></span>
+                        </div>
+                      </div> -->
+                      <div class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden" id="testiSlide7" data-slider-options="{&quot;effect&quot;:&quot;slide&quot;,&quot;loop&quot;:true,&quot;thumbs&quot;:{&quot;swiper&quot;:&quot;.testi-grid2-thumb&quot;},&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;autoHeight&quot;:true},&quot;576&quot;:{&quot;autoHeight&quot;:false}}}">
+                        <div class="swiper-wrapper" id="swiper-wrapper-a219a75621ef2855" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-518px, 0px, 0px);">
+                          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                It's fantastic to hear that your product or
+                                service is loved by customers worldwide! Positive
+                                customer feedback is a strong indicator of
+                                satisfaction and can contribute significantly to
+                                the success and reputation of a business. If
+                                you're looking to capitalize on this positive
+                                sentiment, here are a few as we expand our
+                                business topic, Positive customer feedback I'm
+                                here
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Cameron Williamson</h3>
+                                  <span class="testi-card2_desig">Disaster Recovery</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                Over the past year, collaborating with Webteck has
+                                been a pleasure, and I can attest to their crucial
+                                role in driving the success of our IT endeavors.
+                                As a startup, finding a tech partner capable of
+                                both addressing our current requirements and
+                                scaling alongside our growth was paramount.
+                                Webteck not only met but surpassed all of our
+                                expectations,
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Michel Jane Alum</h3>
+                                  <span class="testi-card2_desig">CTO of Portfolio</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                If you have specific questions about gathering or
+                                analyzing customer feedback, or if you're looking
+                                for general information on the importance of
+                                customer feedback, feel free to ask. Additionally,
+                                if you have a sample of customer feedback that
+                                you'd like assistance with, you can share it, and
+                                I can provide insights or suggestions based on you
+                                provide
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Alex Michel</h3>
+                                  <span class="testi-card2_desig">Founder CEO</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                It sounds like you're expressing positive feedback
+                                or a statement about a product or service being
+                                loved by customers worldwide. If this is a
+                                statement you want to share or discuss, it's great
+                                to highlight positive feedback! Customer
+                                satisfaction and positive testimonials can be
+                                powerful assets for a product or services
+                                businesses I'm here to help!
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Jenny Wilson</h3>
+                                  <span class="testi-card2_desig">Project Manager</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 494px; margin-right: 24px;">
+                            <div class="testi-card2">
+                              <p class="testi-card2_text">
+                                If you have a specific question or if there's more
+                                information you'd like to provide or discuss
+                                regarding your product or service being loved by
+                                customers worldwide, feel free to share more
+                                details. Whether you're looking for advice on how
+                                to leverage this positive feedback, strategies to
+                                maintain customer satisfaction, or any other
+                                related
+                              </p>
+                              <div class="testi-card2_profile">
+                                <div class="testi-card2_content">
+                                  <h3 class="box-title">Savannah Nguyen</h3>
+                                  <span class="testi-card2_desig">UI/UX Designer</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <button
+                          data-slider-prev="#testiSlide7"
+                          class="slider-arrow slider-prev"
+                          tabindex="0"
+                          aria-label="Previous slide"
+                          aria-controls="swiper-wrapper-a219a75621ef2855"
+                        >
+                          <i class="far fa-arrow-left"></i>
+                        </button> -->
+                        <!-- <button
+                          data-slider-next="#testiSlide7"
+                          class="slider-arrow slider-next"
+                          tabindex="0"
+                          aria-label="Next slide"
+                          aria-controls="swiper-wrapper-a219a75621ef2855"
+                        >
+                          <i class="far fa-arrow-right"></i></button
+                        > -->
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
+                        </span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                      <!-- <div class="testi-line"></div> -->
+                    </div>
+                  </div>
+                  <div class="step-11-right">
+                    <div class="">
+                      <div class="title-area mb-35">
+                        <span class="sub-title"><div class="icon-masking me-2">
+                            <span class="mask-icon bg-mask" style="
+                                mask-image: url('assets/img/theme-img/title_shape_1.svg');
+                              "></span>
+                            <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                          </div>
+                          WHY CHOOSE US</span>
+                        <h2 class="sec-title">
+                          We Deal With The Aspects Professional
+                          <span class="text-theme">IT Services</span>
+                        </h2>
+                      </div>
+                      <p class="mt-n2 mb-30">
+                        Collaboratively envisioneer user friendly supply chains
+                        and cross unit imperative. Authoritativel fabricate
+                        competitive resource and holistic.
+                      </p>
+                      <div class="two-column">
+                        <div class="checklist style2">
+                          <ul>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Big Data Analysis
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> 24/7 Online
+                              Support
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Business
+                              Improvement
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="checklist style2">
+                          <ul>
+                            <li>
+                              <i class="fa-solid fa-check"></i> High Quality
+                              Sicurity
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> 24/7 Support Team
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-check"></i> Easy Solutions
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-            
-            
+                
+                
+              </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div
-      class="overflow-hidden  background-image"
-      id="news-xeno"
-    >
+    <div class="overflow-hidden background-image" id="news-xeno">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
@@ -3310,53 +3199,36 @@
             <div class="tab-pane fade" id="nav-step3" role="tabpanel">
               <div class="choose-wrapper">
                 <div class="choose-content">
-                  <img src="assets/img/shape/arrow.svg" alt="" />
-                  <h2 class="sec-title">Our High-level Partners</h2>
-                  <p class="">
-                    We Cooperate with top partners and providers access to over
-                    1M properties in fifferent countries.
-                  </p>
-                </div>
-                <div class="xeno-brand-section">
-                  <div class="box-content">
-                    <div class="media-body">
-                      <img src="assets/img/brand/brand_3_1.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="box-content">
-                    <div class="media-body">
-                      <img src="assets/img/brand/brand_3_2.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="box-content">
-                    <div class="media-body">
-                      <img src="assets/img/brand/brand_3_3.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="box-content">
-                    <div class="media-body">
-                      <img src="assets/img/brand/brand_3_4.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="box-content">
-                    <div class="media-body">
-                      <img src="assets/img/brand/brand_3_5.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="box-content">
-                    <div class="media-body">
-                      <img src="assets/img/brand/brand_3_6.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="box-content">
-                    <div class="media-body">
-                      <img src="assets/img/brand/brand_3_1.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="box-content">
-                    <div class="media-body">
-                      <img src="assets/img/brand/brand_3_2.svg" alt="" />
-                    </div>
+                  <div
+                    class="nav nav-tabs appointment-tabs xion-tabs"
+                    id="nav-tab"
+                    role="tablist"
+                  >
+                    <button class="nav-link">
+                      <img src="assets/img/icon/x1.jpg" alt="" />Tech support
+                    </button>
+                    <button class="nav-link">
+                      <img src="assets/img/icon/x1.jpg" alt="" />Robo Genius
+                    </button>
+                    <button class="nav-link">
+                      <img src="assets/img/icon/x1.jpg" alt="" />Vision AI Tech
+                    </button>
+                    <button class="nav-link">
+                      <img src="assets/img/icon/x1.jpg" alt="" />Blockchain Data
+                    </button>
+                    <button class="nav-link">
+                      <img src="assets/img/icon/x1.jpg" alt="" />Data Interface
+                    </button>
+                    <button class="nav-link">
+                      <img src="assets/img/icon/x1.jpg" alt="" />Digital
+                      Business
+                    </button>
+                    <button class="nav-link">
+                      <img src="assets/img/icon/x1.jpg" alt="" />Open AI Tech
+                    </button>
+                    <button class="nav-link">
+                      <img src="assets/img/icon/x1.jpg" alt="" />Advanced AI
+                    </button>
                   </div>
                 </div>
               </div>
@@ -3960,7 +3832,6 @@
               </p>
             </div>
             <form action="" method="POST" class="contact-form">
-              @csrf
               <div class="row">
                 <div class="form-group col-md-6">
                   <input
@@ -4114,7 +3985,6 @@
                 method="POST"
                 id="newsletter-form"
               >
-                @csrf
                 <input
                   type="email"
                   name="email"
@@ -4132,12 +4002,12 @@
           <div class="col-lg-4 col-md-6">
             <div class="contact">
               <h4>Contact Us</h4>
+              <p><i class="fas fa-phone"></i> 01208 211105</p>
+              <p><i class="fas fa-envelope"></i> info@ourecho.co.uk</p>
               <p>
                 <i class="fas fa-map-marker-alt"></i> Penndene Tresearrett
                 Bodmin Cornwall PL30 4QF
               </p>
-              <p><i class="fas fa-envelope"></i> info@ourecho.co.uk</p>
-              <p><i class="fas fa-phone"></i> 01208 211105</p>
             </div>
             <!-- Social Icons Moved Below Contact Info -->
             <!--<div class="social-icons mt-2">-->
@@ -4187,14 +4057,7 @@
       type="text/javascript"
       src="https://downloads.mailchimp.com/marketing-tools/chatbot.min.js"
     ></script>
-    <script type="text/javascript">
-      // Initialize the Mailchimp Chatbot (replace parameters with your actual config)
-      MailchimpChatbot.init({
-        apiKey: "{{ $magic_mail_chimp_api_key->value }}",
-        widgetId: "your_chatbot_widget_id", // provided by Mailchimp or your integration
-        container: "#mailchimp-chatbot",
-      });
-    </script>
+
     <div id="mailchimp-chatbot"></div>
     <!-- End Mailchimp Chatbot Embed Code -->
 
@@ -4206,99 +4069,6 @@
     <!-- jQuery (ensure this is loaded) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- AJAX submission script -->
-    <script>
-      $(document).ready(function () {
-        $(".contact-form").on("submit", function (e) {
-          e.preventDefault(); // Prevent the default form submission
-
-          var form = $(this);
-          // var actionUrl = '{{ route('email_send') }}';
-
-          $.ajax({
-            url: actionUrl,
-            type: "POST",
-            data: form.serialize(),
-            dataType: "json",
-            success: function (response) {
-              if (response.success) {
-                // Show success message and optionally reset the form
-                form
-                  .find(".form-mess")
-                  .html('<p class="text-success">' + response.message + "</p>");
-                form[0].reset();
-              } else {
-                // Show error message from response
-                form
-                  .find(".form-mess")
-                  .html('<p class="text-danger">' + response.message + "</p>");
-              }
-            },
-            error: function (xhr) {
-              var errorMessage =
-                "Sorry! Something went wrong, please try again later.";
-              if (xhr.responseJSON && xhr.responseJSON.message) {
-                errorMessage = xhr.responseJSON.message;
-              }
-              form
-                .find(".form-mess")
-                .html('<p class="text-danger">' + errorMessage + "</p>");
-            },
-          });
-        });
-      });
-      $(document).ready(function () {
-        $("#newsletter-form").on("submit", function (e) {
-          e.preventDefault();
-
-          //var subscribeUrl = '{{ route('newsletter-subscribe') }}';
-          $.ajax({
-            url: subscribeUrl, // ensure this matches your route
-            type: "POST",
-            data: $(this).serialize(),
-            dataType: "json",
-            success: function (response) {
-              if (response.status === "success") {
-                $("#newsletter-message").html(
-                  '<p class="text-danger" >Thank you for subscribing!</p>'
-                );
-              } else {
-                $("#newsletter-message").html(
-                  '<p class="text-danger" >Subscription failed: ' +
-                    response.message +
-                    "</p>"
-                );
-              }
-            },
-            error: function (xhr) {
-              $("#newsletter-message").html(
-                '<p class="text-danger" >An error occurred. Please try again.</p>'
-              );
-            },
-          });
-        });
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        if (sessionStorage.getItem("showMessage")) {
-          document.getElementById("successMessage").innerText =
-            "Thank you for subscribing!";
-          document.getElementById("successMessage").style.display = "block";
-          sessionStorage.removeItem("showMessage");
-          setTimeout(() => {
-            document.getElementById("successMessage").style.display = "none";
-          }, 7000);
-        }
-      });
-
-      function submitNewsletter(event) {
-        // event.preventDefault();
-        sessionStorage.setItem("showMessage", "true");
-        location.reload();
-      }
-    </script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -4315,5 +4085,71 @@
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/particles-config.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   let serviceBox = document.querySelectorAll(".xeno-service-box");
+      //   serviceBox.forEach((box) => {
+      //     box.addEventListener("click", () => {
+      //       box.classList.toggle("active");
+      //     });
+      //   });
+      // });
+      document.addEventListener("DOMContentLoaded", function () {
+        let serviceBox = document.querySelectorAll(".xeno-service-box");
+
+        serviceBox.forEach((box) => {
+          box.addEventListener("click", () => {
+            const clickedService = box.getAttribute("data-service");
+
+            // Remove active class from all boxes
+            serviceBox.forEach((box) => {
+              box.classList.remove("active");
+              // Hide all inner content
+              box.querySelector(".xeno-service-box-inner").style.display =
+                "none";
+            });
+            console.log(clickedService);
+            const serviceBoxes = Array.from({ length: 9 }, (_, i) =>
+              document.querySelector(
+                `.xeno-service-box[data-service="${i + 1}"]`
+              )
+            );
+
+            const clickedIndex = parseInt(clickedService) - 1;
+
+            // Hide all boxes first
+            serviceBoxes.forEach((box) => {
+              if (box) {
+                box.style.display = "none";
+              }
+            });
+
+            // Show clicked box and next 3 boxes
+            for (
+              let i = clickedIndex;
+              i < clickedIndex + 4 && i < serviceBoxes.length;
+              i++
+            ) {
+              if (serviceBoxes[i]) {
+                serviceBoxes[i].style.display = "flex";
+              }
+            }
+
+            // Show corresponding higher-numbered boxes
+            if (clickedService === "4") {
+              if (serviceBoxes[6]) serviceBoxes[6].style.display = "flex"; // Show service 7
+            } else if (clickedService === "5") {
+              if (serviceBoxes[7]) serviceBoxes[7].style.display = "flex"; // Show service 8
+            } else if (clickedService === "6") {
+              if (serviceBoxes[8]) serviceBoxes[8].style.display = "flex"; // Show service 9
+            }
+            // Add active class to the clicked box
+            box.classList.add("active");
+            // Show the inner content of the clicked box
+            box.querySelector(".xeno-service-box-inner").style.display = "flex";
+          });
+        });
+      });
+    </script>
   </body>
 </html>
