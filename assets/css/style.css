@@ -5861,6 +5861,8 @@ a.text-theme:hover,
 }
 .header-layout3 .main-menu > ul > li > a {
   font-weight: 600;
+  min-height: 111px;
+  align-content: center;
 }
 @media (max-width: 1399px) {
   .header-layout3 .header-button .th-btn {
@@ -29648,7 +29650,7 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: start;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -29658,13 +29660,28 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
+  
+  transform: translateY(75%);
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  /* -webkit-transform: scale(0); */
+  /* -ms-transform: scale(0); */
+  /* transform: scale(0); */
+  border-radius: 20px;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+.gallery-box:hover .gallery-content {
+transform: translateY(0%);
+}
+.gallery-content i{
+  transform: rotate(45deg);
+}
+.xeno-gallery {
+  padding:20px;
+}
+.xeno-gallery h3 , .xeno-gallery p{
+color:#fff;
 }
 .gallery-box .box-title {
   font-size: 20px;
@@ -33703,11 +33720,47 @@ letter-spacing: 1px;
 .xeno-logo{
   max-width: 250px!important;
 }
+#service-xeno,#news-xeno,#team-xeno , #about-xeno{
+  /* background: #f3fafd8c; */
+ /* background: linear-gradient(354deg, #f3fafd8c, transparent); */
+ background: linear-gradient(354deg, #cef4ff52, transparent);
+ position:relative;
+}
 
+.xeno-bg-main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  top: 0;
+ 
+}
+.about-xeno-bg {
+  background: url('/assets/img/bg/bg1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.team-xeno-bg {
+  background: url('/assets/img/bg/bg2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.service-xeno-bg {
+  background: url('/assets/img/bg/bg3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity:0.3;
+}
+.news-xeno-bg {
+  background: url('/assets/img/bg/testi_bg_2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity:1;
+}
 
 .xeno-tabs-wrapper{
   flex-direction: column;
-  background: #fff;
+  background: transparent;
   box-shadow: none;
   width:100%;
 }
@@ -34008,6 +34061,11 @@ gap:20px;
   border-radius:15px;
   align-content: center;
 
+}
+.step-11-left img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
 }
 .step-11-right{
   width:60%;

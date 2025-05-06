@@ -243,16 +243,44 @@
     #home-xeno-main-bg {
       position: absolute;
       width: 100%;
-      height: 80%;
-      top: 120px;
+      height: 100%;
+      /* top: 120px; */
       left: 0;
-      background: url(assets/img/bg/main_bg.jpg);
+      background: url(assets/img/bg/main_bg_new.jpg);
       background-size: cover;
       background-position: right;
       background-repeat: no-repeat;
     }
   </style>
-
+<style>
+  .main-menu .nav-item a {
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .main-menu .nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #007bff; /* Change this to your preferred color */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .main-menu .nav-item a.active,
+  .main-menu .nav-item a:hover {
+    color: #007bff; /* Change this to your preferred hover/active color */
+  }
+  
+  .main-menu .nav-item a.active::after,
+  .main-menu .nav-item a:hover::after {
+    width: 80%;
+  }
+</style>
   <body>
     <!--<div class="cursor"></div>-->
     <!--<div class="cursor2"></div>-->
@@ -273,7 +301,7 @@
           <ul>
             <li><a href="#home-xeno">Home</a></li>
             <li><a href="#about-xeno">About Us</a></li>
-            <li><a href="#service-xeno">Services</a></li>
+            <li><a href="#service-xeno">Products & Services</a></li>
             <li><a href="#eres-xeno">e-Res</a></li>
             <li><a href="#contact-xeno">Contact</a></li>
             <li><a href="https://support.ourecho.co.uk/">Support</a></li>
@@ -303,18 +331,18 @@
               <div class="col-auto">
                 <nav class="main-menu d-none d-lg-inline-block">
                   <ul>
-                    <li><a href="#home-xeno-main">Home</a></li>
-                    <li><a href="#about-xeno">About Us</a></li>
-                    <li><a href="#team-xeno">Team</a></li>
-                    <li>
+                    <li class="nav-item"><a href="#home-xeno-main">Home</a></li>
+                    <li class="nav-item"><a href="#about-xeno">About Us</a></li>
+                    <li class="nav-item"><a href="#team-xeno">Team</a></li>
+                    <li class="nav-item">
                       <a href="#service-xeno"
                         >Products & <br />
                         Services</a
                       >
                     </li>
-                    <li><a href="#news-xeno">News</a></li>
-                    <li><a href="#contact-xeno">Contact Us</a></li>
-                    <li>
+                    <li class="nav-item"><a href="#news-xeno">News</a></li>
+                    <li class="nav-item"><a href="#contact-xeno">Contact Us</a></li>
+                    <li class="nav-item">
                       <a href="https://support.ourecho.co.uk/">Support</a>
                     </li>
                   </ul>
@@ -528,6 +556,9 @@
     </div>
 
     <div class="space" id="about-xeno">
+      <div class="about-xeno-bg xeno-bg-main">
+        
+      </div>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-6 mb-30 mb-xl-0">
@@ -617,8 +648,9 @@
     <div
       id="team-xeno"
       class="space background-image"
-      style="background-image: url('assets/img/bg/why_bg_1.png')"
+      
     >
+    <div class="team-xeno-bg xeno-bg-main"></div>
       <div class="container">
         <div class="row align-items-center flex-row-reverse">
           <div class="col-xxl-7 col-xl-6 mb-30 mb-xl-0">
@@ -964,6 +996,7 @@
     </div>
 
     <div class="space" id="service-xeno">
+      <div class="service-xeno-bg xeno-bg-main"></div>
       <div class="container">
         <div
           class="row justify-content-lg-between justify-content-center align-items-center"
@@ -991,241 +1024,169 @@
             </div>
           </div>
           <div class="service-main-container">
-            <div class="choose-tabs-wrapper xeno-tabs-wrapper xeno-tabs-wrapper-2">
-              <div class="nav nav-tabs choose-tabs-tabs" id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-step11-tab" data-bs-toggle="tab" data-bs-target="#nav-step11" type="button">
-                    <div class="price-box style5 th-ani">
-                      <div class="price-title-wrap">
-                        <div class="price-title-area">
-                          <img
+            <div
+              class="choose-tabs-wrapper xeno-tabs-wrapper xeno-tabs-wrapper-2"
+            >
+              <div
+                class="nav nav-tabs choose-tabs-tabs"
+                id="nav-tab"
+                role="tablist"
+              >
+                <button
+                  class="nav-link active"
+                  id="nav-step11-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-step11"
+                  type="button"
+                >
+                  <div class="price-box style5 th-ani">
+                    <div class="price-title-wrap">
+                      <div class="price-title-area">
+                        <img
                           src="assets/img/icon/service_box_1.svg"
                           alt="icon"
                         />
-                          <div class="media-body">                          
-                            <h3 class="box-title">Software Development</h3>
-                          </div>
-                         </div>
+                        <div class="media-body">
+                          <h3 class="box-title">Software Development</h3>
+                        </div>
                       </div>
                     </div>
-                  </button>
-                  <button class="nav-link" id="nav-step12-tab" data-bs-toggle="tab" data-bs-target="#nav-step12" type="button">
-                    <div class="price-box style5 th-ani">
-                      <div class="price-title-wrap">
-                        <div class="price-title-area">
-                          <img
+                  </div>
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-step12-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-step12"
+                  type="button"
+                >
+                  <div class="price-box style5 th-ani">
+                    <div class="price-title-wrap">
+                      <div class="price-title-area">
+                        <img
                           src="assets/img/icon/service_box_1.svg"
                           alt="icon"
                         />
-                          <div class="media-body">                          
-                            <h3 class="box-title">Software Development</h3>
-                          </div>
-                         </div>
+                        <div class="media-body">
+                          <h3 class="box-title">Software Development</h3>
+                        </div>
                       </div>
                     </div>
-                  </button>
-                  <button class="nav-link" id="nav-step13-tab" data-bs-toggle="tab" data-bs-target="#nav-step13" type="button">
-                    <div class="price-box style5 th-ani">
-                      <div class="price-title-wrap">
-                        <div class="price-title-area">
-                          <img
+                  </div>
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-step13-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-step13"
+                  type="button"
+                >
+                  <div class="price-box style5 th-ani">
+                    <div class="price-title-wrap">
+                      <div class="price-title-area">
+                        <img
                           src="assets/img/icon/service_box_1.svg"
                           alt="icon"
                         />
-                          <div class="media-body">                          
-                            <h3 class="box-title">Software Development</h3>
-                          </div>
-                         </div>
+                        <div class="media-body">
+                          <h3 class="box-title">Software Development</h3>
+                        </div>
                       </div>
                     </div>
-                  </button>
-                  <button class="nav-link" id="nav-step14-tab" data-bs-toggle="tab" data-bs-target="#nav-step14" type="button">
-                    <div class="price-box style5 th-ani">
-                      <div class="price-title-wrap">
-                        <div class="price-title-area">
-                          <img
+                  </div>
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-step14-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-step14"
+                  type="button"
+                >
+                  <div class="price-box style5 th-ani">
+                    <div class="price-title-wrap">
+                      <div class="price-title-area">
+                        <img
                           src="assets/img/icon/service_box_1.svg"
                           alt="icon"
                         />
-                          <div class="media-body">                          
-                            <h3 class="box-title">Software Development</h3>
-                          </div>
-                         </div>
+                        <div class="media-body">
+                          <h3 class="box-title">Software Development</h3>
+                        </div>
                       </div>
                     </div>
-                  </button>
-                  <button class="nav-link" id="nav-step14-tab" data-bs-toggle="tab" data-bs-target="#nav-step14" type="button">
-                    <div class="price-box style5 th-ani">
-                      <div class="price-title-wrap">
-                        <div class="price-title-area">
-                          <img
+                  </div>
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-step14-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-step14"
+                  type="button"
+                >
+                  <div class="price-box style5 th-ani">
+                    <div class="price-title-wrap">
+                      <div class="price-title-area">
+                        <img
                           src="assets/img/icon/service_box_1.svg"
                           alt="icon"
                         />
-                          <div class="media-body">                          
-                            <h3 class="box-title">Software Development</h3>
-                          </div>
-                         </div>
+                        <div class="media-body">
+                          <h3 class="box-title">Software Development</h3>
+                        </div>
                       </div>
                     </div>
-                  </button>
-                  <button class="nav-link" id="nav-step14-tab" data-bs-toggle="tab" data-bs-target="#nav-step14" type="button">
-                    <div class="price-box style5 th-ani">
-                      <div class="price-title-wrap">
-                        <div class="price-title-area">
-                          <img
+                  </div>
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-step14-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-step14"
+                  type="button"
+                >
+                  <div class="price-box style5 th-ani">
+                    <div class="price-title-wrap">
+                      <div class="price-title-area">
+                        <img
                           src="assets/img/icon/service_box_1.svg"
                           alt="icon"
                         />
-                          <div class="media-body">                          
-                            <h3 class="box-title">Software Development</h3>
-                          </div>
-                         </div>
+                        <div class="media-body">
+                          <h3 class="box-title">Software Development</h3>
+                        </div>
                       </div>
                     </div>
-                  </button>
-                </div>
+                  </div>
+                </button>
+              </div>
               <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade nav-step11 active show" id="nav-step11" role="tabpanel">
+                <div
+                  class="tab-pane fade nav-step11 active show"
+                  id="nav-step11"
+                  role="tabpanel"
+                >
                   <div class="step-11-left">
-                    <div class="slider-area testi-grid2-area style3">
-                      <div class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden" id="testiSlide7" data-slider-options="{&quot;effect&quot;:&quot;slide&quot;,&quot;loop&quot;:true,&quot;thumbs&quot;:{&quot;swiper&quot;:&quot;.testi-grid2-thumb&quot;},&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;autoHeight&quot;:true},&quot;576&quot;:{&quot;autoHeight&quot;:false}}}">
-                        <div class="swiper-wrapper" id="swiper-wrapper-a219a75621ef2855" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-2072px, 0px, 0px);">
-                          
-                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                Over the past year, collaborating with Webteck has
-                                been a pleasure, and I can attest to their crucial
-                                role in driving the success of our IT endeavors.
-                                As a startup, finding a tech partner capable of
-                                both addressing our current requirements and
-                                scaling alongside our growth was paramount.
-                                Webteck not only met but surpassed all of our
-                                expectations,
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Michel Jane Alum</h3>
-                                  <span class="testi-card2_desig">CTO of Portfolio</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                If you have specific questions about gathering or
-                                analyzing customer feedback, or if you're looking
-                                for general information on the importance of
-                                customer feedback, feel free to ask. Additionally,
-                                if you have a sample of customer feedback that
-                                you'd like assistance with, you can share it, and
-                                I can provide insights or suggestions based on you
-                                provide
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Alex Michel</h3>
-                                  <span class="testi-card2_desig">Founder CEO</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                It sounds like you're expressing positive feedback
-                                or a statement about a product or service being
-                                loved by customers worldwide. If this is a
-                                statement you want to share or discuss, it's great
-                                to highlight positive feedback! Customer
-                                satisfaction and positive testimonials can be
-                                powerful assets for a product or services
-                                businesses I'm here to help!
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Jenny Wilson</h3>
-                                  <span class="testi-card2_desig">Project Manager</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                If you have a specific question or if there's more
-                                information you'd like to provide or discuss
-                                regarding your product or service being loved by
-                                customers worldwide, feel free to share more
-                                details. Whether you're looking for advice on how
-                                to leverage this positive feedback, strategies to
-                                maintain customer satisfaction, or any other
-                                related
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Savannah Nguyen</h3>
-                                  <span class="testi-card2_desig">UI/UX Designer</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                It's fantastic to hear that your product or
-                                service is loved by customers worldwide! Positive
-                                customer feedback is a strong indicator of
-                                satisfaction and can contribute significantly to
-                                the success and reputation of a business. If
-                                you're looking to capitalize on this positive
-                                sentiment, here are a few as we expand our
-                                business topic, Positive customer feedback I'm
-                                here
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Cameron Williamson</h3>
-                                  <span class="testi-card2_desig">Disaster Recovery</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div></div>
-                        <!-- <button
-                          data-slider-prev="#testiSlide7"
-                          class="slider-arrow slider-prev"
-                          tabindex="0"
-                          aria-label="Previous slide"
-                          aria-controls="swiper-wrapper-a219a75621ef2855"
-                        >
-                          <i class="far fa-arrow-left"></i>
-                        </button> -->
-                        <!-- <button
-                          data-slider-next="#testiSlide7"
-                          class="slider-arrow slider-next"
-                          tabindex="0"
-                          aria-label="Next slide"
-                          aria-controls="swiper-wrapper-a219a75621ef2855"
-                        >
-                          <i class="far fa-arrow-right"></i></button
-                        > -->
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
-                        </span>
-                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                      <!-- <div class="testi-line"></div> -->
-                    </div>
+                    <img src="assets/img/service/service_details.jpg" alt="">
+                    
                   </div>
                   <div class="step-11-right">
                     <div class="">
                       <div class="title-area mb-35">
-                        <span class="sub-title"><div class="icon-masking me-2">
-                            <span class="mask-icon bg-mask" style="
+                        <span class="sub-title"
+                          ><div class="icon-masking me-2">
+                            <span
+                              class="mask-icon bg-mask"
+                              style="
                                 mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                              "></span>
-                            <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                              "
+                            ></span>
+                            <img
+                              src="assets/img/theme-img/title_shape_1.svg"
+                              alt="shape"
+                            />
                           </div>
-                          WHY CHOOSE US</span>
+                          WHY CHOOSE US</span
+                        >
                         <h2 class="sec-title">
                           We Deal With The Aspects Professional
                           <span class="text-theme">IT Services</span>
@@ -1240,7 +1201,8 @@
                         <div class="checklist style2">
                           <ul>
                             <li>
-                              <i class="fa-solid fa-check"></i> Big Data Analysis
+                              <i class="fa-solid fa-check"></i> Big Data
+                              Analysis
                             </li>
                             <li>
                               <i class="fa-solid fa-check"></i> 24/7 Online
@@ -1259,7 +1221,8 @@
                               Sicurity
                             </li>
                             <li>
-                              <i class="fa-solid fa-check"></i> 24/7 Support Team
+                              <i class="fa-solid fa-check"></i> 24/7 Support
+                              Team
                             </li>
                             <li>
                               <i class="fa-solid fa-check"></i> Easy Solutions
@@ -1270,238 +1233,34 @@
                     </div>
                   </div>
                 </div>
-             
-                <div class="tab-pane fade nav-step11" id="nav-step12" role="tabpanel">
-                  <div class="step-11-left">
-                    <div class="slider-area testi-grid2-area style3">
-                      <!-- <div class="testi-indicator">
-                        <div
-                          class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
-                          data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
-                          data-slider-tab="#testiSlide1"
-                        >
-                          <div
-                            class="swiper-wrapper"
-                            id="swiper-wrapper-21174b25b14aade3"
-                            aria-live="off"
-                            
-                          >
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-active"
-                              role="group"
-                              aria-label="1 / 5"
-                              data-swiper-slide-index="0"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_1.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-next"
-                              role="group"
-                              aria-label="2 / 5"
-                              data-swiper-slide-index="1"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_2.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible"
-                              role="group"
-                              aria-label="3 / 5"
-                              data-swiper-slide-index="2"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_3.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
-                              role="group"
-                              aria-label="4 / 5"
-                              data-swiper-slide-index="3"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_4.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible"
-                              role="group"
-                              aria-label="5 / 5"
-                              data-swiper-slide-index="4"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_5.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <span
-                            class="swiper-notification"
-                            aria-live="assertive"
-                            aria-atomic="true"
-                          ></span>
-                        </div>
-                      </div> -->
-                      <div class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden" id="testiSlide7" data-slider-options="{&quot;effect&quot;:&quot;slide&quot;,&quot;loop&quot;:true,&quot;thumbs&quot;:{&quot;swiper&quot;:&quot;.testi-grid2-thumb&quot;},&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;autoHeight&quot;:true},&quot;576&quot;:{&quot;autoHeight&quot;:false}}}">
-                        <div class="swiper-wrapper" id="swiper-wrapper-a219a75621ef2855" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-518px, 0px, 0px);">
-                          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                It's fantastic to hear that your product or
-                                service is loved by customers worldwide! Positive
-                                customer feedback is a strong indicator of
-                                satisfaction and can contribute significantly to
-                                the success and reputation of a business. If
-                                you're looking to capitalize on this positive
-                                sentiment, here are a few as we expand our
-                                business topic, Positive customer feedback I'm
-                                here
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Cameron Williamson</h3>
-                                  <span class="testi-card2_desig">Disaster Recovery</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                Over the past year, collaborating with Webteck has
-                                been a pleasure, and I can attest to their crucial
-                                role in driving the success of our IT endeavors.
-                                As a startup, finding a tech partner capable of
-                                both addressing our current requirements and
-                                scaling alongside our growth was paramount.
-                                Webteck not only met but surpassed all of our
-                                expectations,
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Michel Jane Alum</h3>
-                                  <span class="testi-card2_desig">CTO of Portfolio</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                If you have specific questions about gathering or
-                                analyzing customer feedback, or if you're looking
-                                for general information on the importance of
-                                customer feedback, feel free to ask. Additionally,
-                                if you have a sample of customer feedback that
-                                you'd like assistance with, you can share it, and
-                                I can provide insights or suggestions based on you
-                                provide
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Alex Michel</h3>
-                                  <span class="testi-card2_desig">Founder CEO</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                It sounds like you're expressing positive feedback
-                                or a statement about a product or service being
-                                loved by customers worldwide. If this is a
-                                statement you want to share or discuss, it's great
-                                to highlight positive feedback! Customer
-                                satisfaction and positive testimonials can be
-                                powerful assets for a product or services
-                                businesses I'm here to help!
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Jenny Wilson</h3>
-                                  <span class="testi-card2_desig">Project Manager</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                If you have a specific question or if there's more
-                                information you'd like to provide or discuss
-                                regarding your product or service being loved by
-                                customers worldwide, feel free to share more
-                                details. Whether you're looking for advice on how
-                                to leverage this positive feedback, strategies to
-                                maintain customer satisfaction, or any other
-                                related
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Savannah Nguyen</h3>
-                                  <span class="testi-card2_desig">UI/UX Designer</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- <button
-                          data-slider-prev="#testiSlide7"
-                          class="slider-arrow slider-prev"
-                          tabindex="0"
-                          aria-label="Previous slide"
-                          aria-controls="swiper-wrapper-a219a75621ef2855"
-                        >
-                          <i class="far fa-arrow-left"></i>
-                        </button> -->
-                        <!-- <button
-                          data-slider-next="#testiSlide7"
-                          class="slider-arrow slider-next"
-                          tabindex="0"
-                          aria-label="Next slide"
-                          aria-controls="swiper-wrapper-a219a75621ef2855"
-                        >
-                          <i class="far fa-arrow-right"></i></button
-                        > -->
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
-                        </span>
-                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                      <!-- <div class="testi-line"></div> -->
-                    </div>
-                  </div>
+
+                <div
+                  class="tab-pane fade nav-step11"
+                  id="nav-step12"
+                  role="tabpanel"
+                >
+                <div class="step-11-left">
+                  <img src="assets/img/service/service_details.jpg" alt="">
+                  
+                </div>
                   <div class="step-11-right">
                     <div class="">
                       <div class="title-area mb-35">
-                        <span class="sub-title"><div class="icon-masking me-2">
-                            <span class="mask-icon bg-mask" style="
+                        <span class="sub-title"
+                          ><div class="icon-masking me-2">
+                            <span
+                              class="mask-icon bg-mask"
+                              style="
                                 mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                              "></span>
-                            <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                              "
+                            ></span>
+                            <img
+                              src="assets/img/theme-img/title_shape_1.svg"
+                              alt="shape"
+                            />
                           </div>
-                          WHY CHOOSE US</span>
+                          WHY CHOOSE US</span
+                        >
                         <h2 class="sec-title">
                           We Deal With The Aspects Professional
                           <span class="text-theme">IT Services</span>
@@ -1516,7 +1275,8 @@
                         <div class="checklist style2">
                           <ul>
                             <li>
-                              <i class="fa-solid fa-check"></i> Big Data Analysis
+                              <i class="fa-solid fa-check"></i> Big Data
+                              Analysis
                             </li>
                             <li>
                               <i class="fa-solid fa-check"></i> 24/7 Online
@@ -1535,7 +1295,8 @@
                               Sicurity
                             </li>
                             <li>
-                              <i class="fa-solid fa-check"></i> 24/7 Support Team
+                              <i class="fa-solid fa-check"></i> 24/7 Support
+                              Team
                             </li>
                             <li>
                               <i class="fa-solid fa-check"></i> Easy Solutions
@@ -1546,237 +1307,33 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade nav-step11" id="nav-step13" role="tabpanel">
-                  <div class="step-11-left">
-                    <div class="slider-area testi-grid2-area style3">
-                      <!-- <div class="testi-indicator">
-                        <div
-                          class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
-                          data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
-                          data-slider-tab="#testiSlide1"
-                        >
-                          <div
-                            class="swiper-wrapper"
-                            id="swiper-wrapper-21174b25b14aade3"
-                            aria-live="off"
-                            
-                          >
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-active"
-                              role="group"
-                              aria-label="1 / 5"
-                              data-swiper-slide-index="0"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_1.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-next"
-                              role="group"
-                              aria-label="2 / 5"
-                              data-swiper-slide-index="1"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_2.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible"
-                              role="group"
-                              aria-label="3 / 5"
-                              data-swiper-slide-index="2"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_3.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
-                              role="group"
-                              aria-label="4 / 5"
-                              data-swiper-slide-index="3"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_4.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible"
-                              role="group"
-                              aria-label="5 / 5"
-                              data-swiper-slide-index="4"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_5.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <span
-                            class="swiper-notification"
-                            aria-live="assertive"
-                            aria-atomic="true"
-                          ></span>
-                        </div>
-                      </div> -->
-                      <div class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden" id="testiSlide7" data-slider-options="{&quot;effect&quot;:&quot;slide&quot;,&quot;loop&quot;:true,&quot;thumbs&quot;:{&quot;swiper&quot;:&quot;.testi-grid2-thumb&quot;},&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;autoHeight&quot;:true},&quot;576&quot;:{&quot;autoHeight&quot;:false}}}">
-                        <div class="swiper-wrapper" id="swiper-wrapper-a219a75621ef2855" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-518px, 0px, 0px);">
-                          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                It's fantastic to hear that your product or
-                                service is loved by customers worldwide! Positive
-                                customer feedback is a strong indicator of
-                                satisfaction and can contribute significantly to
-                                the success and reputation of a business. If
-                                you're looking to capitalize on this positive
-                                sentiment, here are a few as we expand our
-                                business topic, Positive customer feedback I'm
-                                here
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Cameron Williamson</h3>
-                                  <span class="testi-card2_desig">Disaster Recovery</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                Over the past year, collaborating with Webteck has
-                                been a pleasure, and I can attest to their crucial
-                                role in driving the success of our IT endeavors.
-                                As a startup, finding a tech partner capable of
-                                both addressing our current requirements and
-                                scaling alongside our growth was paramount.
-                                Webteck not only met but surpassed all of our
-                                expectations,
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Michel Jane Alum</h3>
-                                  <span class="testi-card2_desig">CTO of Portfolio</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                If you have specific questions about gathering or
-                                analyzing customer feedback, or if you're looking
-                                for general information on the importance of
-                                customer feedback, feel free to ask. Additionally,
-                                if you have a sample of customer feedback that
-                                you'd like assistance with, you can share it, and
-                                I can provide insights or suggestions based on you
-                                provide
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Alex Michel</h3>
-                                  <span class="testi-card2_desig">Founder CEO</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                It sounds like you're expressing positive feedback
-                                or a statement about a product or service being
-                                loved by customers worldwide. If this is a
-                                statement you want to share or discuss, it's great
-                                to highlight positive feedback! Customer
-                                satisfaction and positive testimonials can be
-                                powerful assets for a product or services
-                                businesses I'm here to help!
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Jenny Wilson</h3>
-                                  <span class="testi-card2_desig">Project Manager</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                If you have a specific question or if there's more
-                                information you'd like to provide or discuss
-                                regarding your product or service being loved by
-                                customers worldwide, feel free to share more
-                                details. Whether you're looking for advice on how
-                                to leverage this positive feedback, strategies to
-                                maintain customer satisfaction, or any other
-                                related
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Savannah Nguyen</h3>
-                                  <span class="testi-card2_desig">UI/UX Designer</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- <button
-                          data-slider-prev="#testiSlide7"
-                          class="slider-arrow slider-prev"
-                          tabindex="0"
-                          aria-label="Previous slide"
-                          aria-controls="swiper-wrapper-a219a75621ef2855"
-                        >
-                          <i class="far fa-arrow-left"></i>
-                        </button> -->
-                        <!-- <button
-                          data-slider-next="#testiSlide7"
-                          class="slider-arrow slider-next"
-                          tabindex="0"
-                          aria-label="Next slide"
-                          aria-controls="swiper-wrapper-a219a75621ef2855"
-                        >
-                          <i class="far fa-arrow-right"></i></button
-                        > -->
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
-                        </span>
-                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                      <!-- <div class="testi-line"></div> -->
-                    </div>
-                  </div>
+                <div
+                  class="tab-pane fade nav-step11"
+                  id="nav-step13"
+                  role="tabpanel"
+                >
+                <div class="step-11-left">
+                  <img src="assets/img/service/service_details.jpg" alt="">
+                  
+                </div>
                   <div class="step-11-right">
                     <div class="">
                       <div class="title-area mb-35">
-                        <span class="sub-title"><div class="icon-masking me-2">
-                            <span class="mask-icon bg-mask" style="
+                        <span class="sub-title"
+                          ><div class="icon-masking me-2">
+                            <span
+                              class="mask-icon bg-mask"
+                              style="
                                 mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                              "></span>
-                            <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                              "
+                            ></span>
+                            <img
+                              src="assets/img/theme-img/title_shape_1.svg"
+                              alt="shape"
+                            />
                           </div>
-                          WHY CHOOSE US</span>
+                          WHY CHOOSE US</span
+                        >
                         <h2 class="sec-title">
                           We Deal With The Aspects Professional
                           <span class="text-theme">IT Services</span>
@@ -1791,7 +1348,8 @@
                         <div class="checklist style2">
                           <ul>
                             <li>
-                              <i class="fa-solid fa-check"></i> Big Data Analysis
+                              <i class="fa-solid fa-check"></i> Big Data
+                              Analysis
                             </li>
                             <li>
                               <i class="fa-solid fa-check"></i> 24/7 Online
@@ -1810,7 +1368,8 @@
                               Sicurity
                             </li>
                             <li>
-                              <i class="fa-solid fa-check"></i> 24/7 Support Team
+                              <i class="fa-solid fa-check"></i> 24/7 Support
+                              Team
                             </li>
                             <li>
                               <i class="fa-solid fa-check"></i> Easy Solutions
@@ -1821,237 +1380,33 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade nav-step11" id="nav-step14" role="tabpanel">
-                  <div class="step-11-left">
-                    <div class="slider-area testi-grid2-area style3">
-                      <!-- <div class="testi-indicator">
-                        <div
-                          class="swiper th-slider testi-grid2-thumb swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs"
-                          data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}'
-                          data-slider-tab="#testiSlide1"
-                        >
-                          <div
-                            class="swiper-wrapper"
-                            id="swiper-wrapper-21174b25b14aade3"
-                            aria-live="off"
-                            
-                          >
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-active"
-                              role="group"
-                              aria-label="1 / 5"
-                              data-swiper-slide-index="0"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_1.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-next"
-                              role="group"
-                              aria-label="2 / 5"
-                              data-swiper-slide-index="1"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_2.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible"
-                              role="group"
-                              aria-label="3 / 5"
-                              data-swiper-slide-index="2"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_3.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible swiper-slide-thumb-active"
-                              role="group"
-                              aria-label="4 / 5"
-                              data-swiper-slide-index="3"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_4.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                            <div
-                              class="swiper-slide swiper-slide-visible"
-                              role="group"
-                              aria-label="5 / 5"
-                              data-swiper-slide-index="4"
-                              
-                            >
-                              <div class="box-img">
-                                <img
-                                  src="assets/img/testimonial/testi_1_5.png"
-                                  alt="Image"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <span
-                            class="swiper-notification"
-                            aria-live="assertive"
-                            aria-atomic="true"
-                          ></span>
-                        </div>
-                      </div> -->
-                      <div class="swiper th-slider swiper-initialized swiper-horizontal swiper-backface-hidden" id="testiSlide7" data-slider-options="{&quot;effect&quot;:&quot;slide&quot;,&quot;loop&quot;:true,&quot;thumbs&quot;:{&quot;swiper&quot;:&quot;.testi-grid2-thumb&quot;},&quot;breakpoints&quot;:{&quot;0&quot;:{&quot;autoHeight&quot;:true},&quot;576&quot;:{&quot;autoHeight&quot;:false}}}">
-                        <div class="swiper-wrapper" id="swiper-wrapper-a219a75621ef2855" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-518px, 0px, 0px);">
-                          <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 5" data-swiper-slide-index="0" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                It's fantastic to hear that your product or
-                                service is loved by customers worldwide! Positive
-                                customer feedback is a strong indicator of
-                                satisfaction and can contribute significantly to
-                                the success and reputation of a business. If
-                                you're looking to capitalize on this positive
-                                sentiment, here are a few as we expand our
-                                business topic, Positive customer feedback I'm
-                                here
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Cameron Williamson</h3>
-                                  <span class="testi-card2_desig">Disaster Recovery</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 5" data-swiper-slide-index="1" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                Over the past year, collaborating with Webteck has
-                                been a pleasure, and I can attest to their crucial
-                                role in driving the success of our IT endeavors.
-                                As a startup, finding a tech partner capable of
-                                both addressing our current requirements and
-                                scaling alongside our growth was paramount.
-                                Webteck not only met but surpassed all of our
-                                expectations,
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Michel Jane Alum</h3>
-                                  <span class="testi-card2_desig">CTO of Portfolio</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 5" data-swiper-slide-index="2" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                If you have specific questions about gathering or
-                                analyzing customer feedback, or if you're looking
-                                for general information on the importance of
-                                customer feedback, feel free to ask. Additionally,
-                                if you have a sample of customer feedback that
-                                you'd like assistance with, you can share it, and
-                                I can provide insights or suggestions based on you
-                                provide
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Alex Michel</h3>
-                                  <span class="testi-card2_desig">Founder CEO</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide" role="group" aria-label="4 / 5" data-swiper-slide-index="3" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                It sounds like you're expressing positive feedback
-                                or a statement about a product or service being
-                                loved by customers worldwide. If this is a
-                                statement you want to share or discuss, it's great
-                                to highlight positive feedback! Customer
-                                satisfaction and positive testimonials can be
-                                powerful assets for a product or services
-                                businesses I'm here to help!
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Jenny Wilson</h3>
-                                  <span class="testi-card2_desig">Project Manager</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide" role="group" aria-label="5 / 5" data-swiper-slide-index="4" style="width: 494px; margin-right: 24px;">
-                            <div class="testi-card2">
-                              <p class="testi-card2_text">
-                                If you have a specific question or if there's more
-                                information you'd like to provide or discuss
-                                regarding your product or service being loved by
-                                customers worldwide, feel free to share more
-                                details. Whether you're looking for advice on how
-                                to leverage this positive feedback, strategies to
-                                maintain customer satisfaction, or any other
-                                related
-                              </p>
-                              <div class="testi-card2_profile">
-                                <div class="testi-card2_content">
-                                  <h3 class="box-title">Savannah Nguyen</h3>
-                                  <span class="testi-card2_desig">UI/UX Designer</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- <button
-                          data-slider-prev="#testiSlide7"
-                          class="slider-arrow slider-prev"
-                          tabindex="0"
-                          aria-label="Previous slide"
-                          aria-controls="swiper-wrapper-a219a75621ef2855"
-                        >
-                          <i class="far fa-arrow-left"></i>
-                        </button> -->
-                        <!-- <button
-                          data-slider-next="#testiSlide7"
-                          class="slider-arrow slider-next"
-                          tabindex="0"
-                          aria-label="Next slide"
-                          aria-controls="swiper-wrapper-a219a75621ef2855"
-                        >
-                          <i class="far fa-arrow-right"></i></button
-                        > -->
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true">
-                        </span>
-                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                      <!-- <div class="testi-line"></div> -->
-                    </div>
-                  </div>
+                <div
+                  class="tab-pane fade nav-step11"
+                  id="nav-step14"
+                  role="tabpanel"
+                >
+                <div class="step-11-left">
+                  <img src="assets/img/service/service_details.jpg" alt="">
+                  
+                </div>
                   <div class="step-11-right">
                     <div class="">
                       <div class="title-area mb-35">
-                        <span class="sub-title"><div class="icon-masking me-2">
-                            <span class="mask-icon bg-mask" style="
+                        <span class="sub-title"
+                          ><div class="icon-masking me-2">
+                            <span
+                              class="mask-icon bg-mask"
+                              style="
                                 mask-image: url('assets/img/theme-img/title_shape_1.svg');
-                              "></span>
-                            <img src="assets/img/theme-img/title_shape_1.svg" alt="shape">
+                              "
+                            ></span>
+                            <img
+                              src="assets/img/theme-img/title_shape_1.svg"
+                              alt="shape"
+                            />
                           </div>
-                          WHY CHOOSE US</span>
+                          WHY CHOOSE US</span
+                        >
                         <h2 class="sec-title">
                           We Deal With The Aspects Professional
                           <span class="text-theme">IT Services</span>
@@ -2066,7 +1421,8 @@
                         <div class="checklist style2">
                           <ul>
                             <li>
-                              <i class="fa-solid fa-check"></i> Big Data Analysis
+                              <i class="fa-solid fa-check"></i> Big Data
+                              Analysis
                             </li>
                             <li>
                               <i class="fa-solid fa-check"></i> 24/7 Online
@@ -2085,7 +1441,8 @@
                               Sicurity
                             </li>
                             <li>
-                              <i class="fa-solid fa-check"></i> 24/7 Support Team
+                              <i class="fa-solid fa-check"></i> 24/7 Support
+                              Team
                             </li>
                             <li>
                               <i class="fa-solid fa-check"></i> Easy Solutions
@@ -2097,15 +1454,14 @@
                   </div>
                 </div>
               </div>
-                
-                
-              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="overflow-hidden background-image" id="news-xeno">
+      <div class="news-xeno-bg xeno-bg-main"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
@@ -2131,1674 +1487,86 @@
             </div>
           </div>
         </div>
-        <div class="choose-tabs-wrapper xeno-tabs-wrapper">
+        <div
+          class="row gy-4 filter-active"
+          style="position: relative; height: 624px"
+        >
           <div
-            class="nav nav-tabs choose-tabs-tabs"
-            id="nav-tab"
-            role="tablist"
+            class="col-md-6 col-xxl-auto filter-item"
+            style="position: absolute; left: 0px; top: 0px"
           >
-            <button
-              class="nav-link active"
-              id="nav-step1-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-step1"
-              type="button"
-            >
-              News
-            </button>
-            <button
-              class="nav-link"
-              id="nav-step2-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-step2"
-              type="button"
-            >
-              Review / Social
-            </button>
-            <button
-              class="nav-link"
-              id="nav-step3-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-step3"
-              type="button"
-            >
-              Partners
-            </button>
-            <button
-              class="nav-link"
-              id="nav-step4-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-step4"
-              type="button"
-            >
-              Testimonials
-            </button>
-            <button
-              class="nav-link"
-              id="nav-step5-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-step5"
-              type="button"
-            >
-              Statictics
-            </button>
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img
+                  src="assets/img/gallery/gallery_2_1.jpg"
+                  alt="gallery image"
+                />
+              </div>
+              <div class="gallery-content">
+                <div class="media-left">
+                  <!-- <a
+                    href="assets/img/gallery/gallery_2_1.jpg"
+                    class="icon-btn popup-image"
+                    >
+                    
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a> -->
+                <div class="xeno-gallery">
+                  <h3>This is news</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus natus quas perspiciatis qui. Eius voluptatum omnis minima, ad doloribus, officia excepturi error quam doloremque neque laborum delectus vitae fuga.</p>
+                </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tab-content" id="nav-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="nav-step1"
-              role="tabpanel"
-            >
-              <div class="choose-wrapper xeno-choose-wrapper">
-                <div class="choose-content">
-                  <div
-                    class="choose-image th-anim"
-                    style="
-                      transform: translate(0px, 0px);
-                      opacity: 1;
-                      visibility: inherit;
-                    "
-                  >
-                    <div class="video-box3">
-                      <img
-                        src="assets/img/normal/choose_img_main.png"
-                        alt="video"
-                      />
-                      <a
-                        href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                        class="play-btn popup-video"
-                        ><i class="fa-sharp fa-solid fa-play"></i
-                      ></a>
+          
+          
+          <div
+            class="col-md-6 col-xxl-auto filter-item"
+            style="position: absolute; left: 702px; top: 312px"
+          >
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img
+                  src="assets/img/gallery/gallery_2_4.jpg"
+                  alt="gallery image"
+                />
+              </div>
+              <div class="gallery-content">
+                <div class="media-left">
+                  <!-- <a
+                    href="assets/img/gallery/gallery_2_4.jpg"
+                    class="icon-btn popup-image"
+                    ><i class="fa-solid fa-arrow-up"></i></a> -->
+                    <div class="xeno-gallery">
+                      <h3>This is news</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus natus quas perspiciatis qui. Eius voluptatum omnis minima, ad doloribus, officia excepturi error quam doloremque neque laborum delectus vitae fuga.</p>
                     </div>
-                    <div class="title-area text-center text-xl-start mt-5">
-                      <span class="sub-title style1">Breaking News Today</span>
-                      <h5 class="sec-title">
-                        Latest Updates in Technology and Innovation
-                      </h5>
-                      <p>
-                        Tech Update: A new AI breakthrough is set to enhance our
-                        interactions with machines, while quantum computing
-                        advancements will boost data processing and security.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="xeno-choose-vertical-bar"></div>
-                  <div class="xeno-choose-card-container">
-                    <div class="xeno-choose-card-section">
-                      <div class="xeno-choose-card-number">01</div>
-                      <div>
-                        <svg
-                          width="21"
-                          height="2"
-                          viewBox="0 0 21 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.111328"
-                            y1="1.07664"
-                            x2="20.6671"
-                            y2="1.07664"
-                            stroke="#4C4C4C"
-                            stroke-width="0.85649"
-                          />
-                        </svg>
-                      </div>
-                      <div class="title-area xeno-choose-title-area">
-                        <span class="sub-title style1"
-                          >Innovative Tech Solutions</span
-                        >
-                        <h5 class="sec-title">New Tech Innovations!</h5>
-                        <p>
-                          Check out our latest update! It enhances productivity
-                          with collaboration tools and a user-friendly
-                          interface.
-                        </p>
-                      </div>
-                      <div class="xeno-choose-card-image">
-                        <img src="assets/img/normal/choose_tab_1.png" alt="" />
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="xeno-choose-card-section">
-                      <div class="xeno-choose-card-number">02</div>
-                      <div>
-                        <svg
-                          width="21"
-                          height="2"
-                          viewBox="0 0 21 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.111328"
-                            y1="1.07664"
-                            x2="20.6671"
-                            y2="1.07664"
-                            stroke="#4C4C4C"
-                            stroke-width="0.85649"
-                          />
-                        </svg>
-                      </div>
-                      <div class="title-area xeno-choose-title-area">
-                        <span class="sub-title style1"
-                          >Innovative Tech Solutions</span
-                        >
-                        <h5 class="sec-title">New Tech Innovations!</h5>
-                        <p>
-                          Check out our latest update! It enhances productivity
-                          with collaboration tools and a user-friendly
-                          interface.
-                        </p>
-                      </div>
-                      <div class="xeno-choose-card-image">
-                        <img src="assets/img/normal/choose_tab_1.png" alt="" />
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="xeno-choose-card-section">
-                      <div class="xeno-choose-card-number">03</div>
-                      <div>
-                        <svg
-                          width="21"
-                          height="2"
-                          viewBox="0 0 21 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.111328"
-                            y1="1.07664"
-                            x2="20.6671"
-                            y2="1.07664"
-                            stroke="#4C4C4C"
-                            stroke-width="0.85649"
-                          />
-                        </svg>
-                      </div>
-                      <div class="title-area xeno-choose-title-area">
-                        <span class="sub-title style1"
-                          >Innovative Tech Solutions</span
-                        >
-                        <h5 class="sec-title">New Tech Innovations!</h5>
-                        <p>
-                          Check out our latest update! It enhances productivity
-                          with collaboration tools and a user-friendly
-                          interface.
-                        </p>
-                      </div>
-                      <div class="xeno-choose-card-image">
-                        <img src="assets/img/normal/choose_tab_1.png" alt="" />
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="xeno-choose-card-section">
-                      <div class="xeno-choose-card-number">04</div>
-                      <div>
-                        <svg
-                          width="21"
-                          height="2"
-                          viewBox="0 0 21 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.111328"
-                            y1="1.07664"
-                            x2="20.6671"
-                            y2="1.07664"
-                            stroke="#4C4C4C"
-                            stroke-width="0.85649"
-                          />
-                        </svg>
-                      </div>
-                      <div class="title-area xeno-choose-title-area">
-                        <span class="sub-title style1"
-                          >Innovative Tech Solutions</span
-                        >
-                        <h5 class="sec-title">New Tech Innovations!</h5>
-                        <p>
-                          Check out our latest update! It enhances productivity
-                          with collaboration tools and a user-friendly
-                          interface.
-                        </p>
-                      </div>
-                      <div class="xeno-choose-card-image">
-                        <img src="assets/img/normal/choose_tab_1.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="nav-step2" role="tabpanel">
-              <div class="choose-wrapper xeno-tab-wrapper-2">
-                <div class="choose-content">
-                  <div class="xeno-choose-rating-container">
-                    <div class="xeno-choose-rating-section">
-                      <div class="xeno-choose-rating">
-                        <div class="xeno-choose-rating-1">
-                          <span class="rating-number-xeno-1">5.0</span>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 14 13"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                              fill="#FFCE22"
-                            />
-                          </svg>
-                        </div>
-
-                        <div class="progress">
-                          <div
-                            class="progress-bar"
-                            style="
-                              width: 95%;
-                              animation: 1.8s ease 0s 1 normal none running
-                                animate-positive;
-                              opacity: 1;
-                            "
-                          >
-                            <div class="progress-value">95%</div>
-                          </div>
-                        </div>
-
-                        <div class="rating-number-xeno-2">9k Reviews</div>
-                      </div>
-                      <div class="xeno-choose-rating">
-                        <div class="xeno-choose-rating-1">
-                          <span class="rating-number-xeno-1">4.0</span>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 14 13"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                              fill="#FFCE22"
-                            />
-                          </svg>
-                        </div>
-
-                        <div class="progress">
-                          <div
-                            class="progress-bar"
-                            style="
-                              width: 85%;
-                              animation: 1.8s ease 0s 1 normal none running
-                                animate-positive;
-                              opacity: 1;
-                            "
-                          >
-                            <div class="progress-value">85%</div>
-                          </div>
-                        </div>
-
-                        <div class="rating-number-xeno-2">8k Reviews</div>
-                      </div>
-                      <div class="xeno-choose-rating">
-                        <div class="xeno-choose-rating-1">
-                          <span class="rating-number-xeno-1">3.0</span>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 14 13"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                              fill="#FFCE22"
-                            />
-                          </svg>
-                        </div>
-
-                        <div class="progress">
-                          <div
-                            class="progress-bar"
-                            style="
-                              width: 75%;
-                              animation: 1.8s ease 0s 1 normal none running
-                                animate-positive;
-                              opacity: 1;
-                            "
-                          >
-                            <div class="progress-value">75%</div>
-                          </div>
-                        </div>
-
-                        <div class="rating-number-xeno-2">7k Reviews</div>
-                      </div>
-                      <div class="xeno-choose-rating">
-                        <div class="xeno-choose-rating-1">
-                          <span class="rating-number-xeno-1">2.0</span>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 14 13"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                              fill="#FFCE22"
-                            />
-                          </svg>
-                        </div>
-
-                        <div class="progress">
-                          <div
-                            class="progress-bar"
-                            style="
-                              width: 65%;
-                              animation: 1.8s ease 0s 1 normal none running
-                                animate-positive;
-                              opacity: 1;
-                            "
-                          >
-                            <div class="progress-value">65%</div>
-                          </div>
-                        </div>
-
-                        <div class="rating-number-xeno-2">6k Reviews</div>
-                      </div>
-                      <div class="xeno-choose-rating">
-                        <div class="xeno-choose-rating-1">
-                          <span class="rating-number-xeno-1">1.0</span>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 14 13"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                              fill="#FFCE22"
-                            />
-                          </svg>
-                        </div>
-
-                        <div class="progress">
-                          <div
-                            class="progress-bar"
-                            style="
-                              width: 55%;
-                              animation: 1.8s ease 0s 1 normal none running
-                                animate-positive;
-                              opacity: 1;
-                            "
-                          >
-                            <div class="progress-value">55%</div>
-                          </div>
-                        </div>
-
-                        <div class="rating-number-xeno-2">5k Reviews</div>
-                      </div>
-                    </div>
-                    <div class="xeno-choose-rating-box">
-                      <div>
-                        <span class="rating-number-xeno">4.5</span>
-                        <p class="rating-text-xeno">45 Rating</p>
-                      </div>
-                      <div>
-                        <svg
-                          width="38"
-                          height="38"
-                          viewBox="0 0 14 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                            fill="#FFCE22"
-                          />
-                        </svg>
-                        <svg
-                          width="38"
-                          height="38"
-                          viewBox="0 0 14 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                            fill="#FFCE22"
-                          />
-                        </svg>
-                        <svg
-                          width="38"
-                          height="38"
-                          viewBox="0 0 14 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                            fill="#FFCE22"
-                          />
-                        </svg>
-                        <svg
-                          width="38"
-                          height="38"
-                          viewBox="0 0 14 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                            fill="#FFCE22"
-                          />
-                        </svg>
-                        <svg
-                          width="38"
-                          height="38"
-                          viewBox="0 0 14 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.67969 0.0292969L9.13193 3.65408L13.3371 4.86618L10.6475 8.31852L10.7942 12.6924L6.67969 11.2013L2.56519 12.6924L2.71188 8.31852L0.0222917 4.86618L4.22745 3.65408L6.67969 0.0292969Z"
-                            fill="#FFCE22"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider-area">
-                  <div
-                    class="swiper th-slider has-shadow swiper-initialized swiper-horizontal swiper-backface-hidden"
-                    id="testiSlider14"
-                    data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'
-                  >
-                    <div
-                      class="swiper-wrapper"
-                      id="swiper-wrapper-18157bd7665bf813"
-                      aria-live="off"
-                      style="
-                        transition-duration: 0ms;
-                        transform: translate3d(-2106px, 0px, 0px);
-                        transition-delay: 0ms;
-                      "
-                    >
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="5 / 6"
-                        data-swiper-slide-index="4"
-                        style="width: 678px; margin-right: 24px"
-                      >
-                        <div class="testi-box3">
-                          <div class="testi-box3_content">
-                            <div class="testi-box3_review">
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-                            </div>
-                            <p class="testi-box3_text">
-                              “CRM enables businesses to provide faster, more
-                              responsive customer service by centralizing
-                              customer inquiries, tracking support tickets, and
-                              providing agents with access to customer history.”
-                            </p>
-                            <h3 class="box-title">Jackline Techie</h3>
-                            <p class="testi-box3_desig">
-                              Head of Design, Layers
-                            </p>
-                          </div>
-                          <div class="testi-box3_img">
-                            <img
-                              src="assets/img/testimonial/testi_12_1.jpg"
-                              alt="Avater"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="6 / 6"
-                        data-swiper-slide-index="5"
-                        style="width: 678px; margin-right: 24px"
-                      >
-                        <div class="testi-box3">
-                          <div class="testi-box3_content">
-                            <div class="testi-box3_review">
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-                            </div>
-                            <p class="testi-box3_text">
-                              “CRM enables businesses to provide faster, more
-                              responsive customer service by centralizing
-                              customer inquiries, tracking support tickets, and
-                              providing agents with access to customer history.”
-                            </p>
-                            <h3 class="box-title">Abraham Khalil</h3>
-                            <p class="testi-box3_desig">Head of Manager</p>
-                          </div>
-                          <div class="testi-box3_img">
-                            <img
-                              src="assets/img/testimonial/testi_12_2.jpg"
-                              alt="Avater"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-prev"
-                        role="group"
-                        aria-label="1 / 6"
-                        data-swiper-slide-index="0"
-                        style="width: 678px; margin-right: 24px"
-                      >
-                        <div class="testi-box3">
-                          <div class="testi-box3_content">
-                            <div class="testi-box3_review">
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-                            </div>
-                            <p class="testi-box3_text">
-                              “CRM enables businesses to provide faster, more
-                              responsive customer service by centralizing
-                              customer inquiries, tracking support tickets, and
-                              providing agents with access to customer history.”
-                            </p>
-                            <h3 class="box-title">Kelly Williams</h3>
-                            <p class="testi-box3_desig">
-                              Head of Design, Layers
-                            </p>
-                          </div>
-                          <div class="testi-box3_img">
-                            <img
-                              src="assets/img/testimonial/testi_12_1.jpg"
-                              alt="Avater"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-active"
-                        role="group"
-                        aria-label="2 / 6"
-                        data-swiper-slide-index="1"
-                        style="width: 678px; margin-right: 24px"
-                      >
-                        <div class="testi-box3">
-                          <div class="testi-box3_content">
-                            <div class="testi-box3_review">
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-                            </div>
-                            <p class="testi-box3_text">
-                              “CRM enables businesses to provide faster, more
-                              responsive customer service by centralizing
-                              customer inquiries, tracking support tickets, and
-                              providing agents with access to customer history.”
-                            </p>
-                            <h3 class="box-title">Jackline Techie</h3>
-                            <p class="testi-box3_desig">Head of Manager</p>
-                          </div>
-                          <div class="testi-box3_img">
-                            <img
-                              src="assets/img/testimonial/testi_12_2.jpg"
-                              alt="Avater"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-next"
-                        role="group"
-                        aria-label="3 / 6"
-                        data-swiper-slide-index="2"
-                        style="width: 678px; margin-right: 24px"
-                      >
-                        <div class="testi-box3">
-                          <div class="testi-box3_content">
-                            <div class="testi-box3_review">
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-                            </div>
-                            <p class="testi-box3_text">
-                              “CRM enables businesses to provide faster, more
-                              responsive customer service by centralizing
-                              customer inquiries, tracking support tickets, and
-                              providing agents with access to customer history.”
-                            </p>
-                            <h3 class="box-title">Abraham Khalil</h3>
-                            <p class="testi-box3_desig">
-                              Head of Design, Layers
-                            </p>
-                          </div>
-                          <div class="testi-box3_img">
-                            <img
-                              src="assets/img/testimonial/testi_12_1.jpg"
-                              alt="Avater"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="4 / 6"
-                        data-swiper-slide-index="3"
-                        style="width: 678px; margin-right: 24px"
-                      >
-                        <div class="testi-box3">
-                          <div class="testi-box3_content">
-                            <div class="testi-box3_review">
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-
-                              <svg
-                                width="22"
-                                height="21"
-                                viewBox="0 0 22 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M10.5781 0.529297L14.4316 6.22538L21.0397 8.13011L16.8133 13.5552L17.0438 20.4285L10.5781 18.0853L4.11249 20.4285L4.343 13.5552L0.116504 8.13011L6.7246 6.22538L10.5781 0.529297Z"
-                                  fill="#0C8EC2"
-                                />
-                              </svg>
-                            </div>
-                            <p class="testi-box3_text">
-                              “CRM enables businesses to provide faster, more
-                              responsive customer service by centralizing
-                              customer inquiries, tracking support tickets, and
-                              providing agents with access to customer history.”
-                            </p>
-                            <h3 class="box-title">David Farnandes</h3>
-                            <p class="testi-box3_desig">Head of Manager</p>
-                          </div>
-                          <div class="testi-box3_img">
-                            <img
-                              src="assets/img/testimonial/testi_12_2.jpg"
-                              alt="Avater"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
-                    ></span>
-                  </div>
-                </div>
+          </div>
+          <div
+            class="col-md-6 col-xxl-auto filter-item"
+            style="position: absolute; left: 702px; top: 312px"
+          >
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img
+                  src="assets/img/gallery/gallery_2_4.jpg"
+                  alt="gallery image"
+                />
               </div>
-            </div>
-            <div class="tab-pane fade" id="nav-step3" role="tabpanel">
-              <div class="choose-wrapper">
-                <div class="choose-content">
-                  <div
-                    class="nav nav-tabs appointment-tabs xion-tabs"
-                    id="nav-tab"
-                    role="tablist"
-                  >
-                    <button class="nav-link">
-                      <img src="assets/img/icon/x1.jpg" alt="" />Tech support
-                    </button>
-                    <button class="nav-link">
-                      <img src="assets/img/icon/x1.jpg" alt="" />Robo Genius
-                    </button>
-                    <button class="nav-link">
-                      <img src="assets/img/icon/x1.jpg" alt="" />Vision AI Tech
-                    </button>
-                    <button class="nav-link">
-                      <img src="assets/img/icon/x1.jpg" alt="" />Blockchain Data
-                    </button>
-                    <button class="nav-link">
-                      <img src="assets/img/icon/x1.jpg" alt="" />Data Interface
-                    </button>
-                    <button class="nav-link">
-                      <img src="assets/img/icon/x1.jpg" alt="" />Digital
-                      Business
-                    </button>
-                    <button class="nav-link">
-                      <img src="assets/img/icon/x1.jpg" alt="" />Open AI Tech
-                    </button>
-                    <button class="nav-link">
-                      <img src="assets/img/icon/x1.jpg" alt="" />Advanced AI
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="nav-step4" role="tabpanel">
-              <div class="choose-wrapper">
-                <div class="testi-card-area slider-area">
-                  <div
-                    class="swiper testi-card-slide th-slider swiper-initialized swiper-horizontal swiper-backface-hidden"
-                    id="testiSlide1"
-                    data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"1"}}}'
-                  >
-                    <div
-                      class="swiper-wrapper"
-                      id="swiper-wrapper-027d21708ede3333"
-                      aria-live="off"
-                      style="
-                        transition-duration: 1000ms;
-                        transform: translate3d(-1692px, 0px, 0px);
-                      "
-                    >
-                      <div
-                        class="swiper-slide swiper-slide-next"
-                        role="group"
-                        aria-label="4 / 4"
-                        data-swiper-slide-index="3"
-                        style="width: 540px; margin-right: 24px"
-                      >
-                        <div class="testi-card">
-                          <div class="testi-card-up">
-                            <p class="testi-card_text">
-                              “Five star he reinvent prospective metrics before
-                              granular schema. Professionally metrics before
-                              expedite client-centric methods of empow ment
-                              whereas effective gotoning.”
-                            </p>
-                            <div class="testi-card_profile">
-                              <!-- <div class="testi-card_avater">
-                                <img src="assets/img/testimonial/testi_1_4.jpg" alt="testimonial">
-                              </div> -->
-                              <div class="media-body">
-                                <h3 class="testi-card_name">Alexa Jenifer</h3>
-                                <span class="testi-card_desig"
-                                  >CEO at Morosto</span
-                                >
-                                <div>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="testi-card-down">
-                            <img src="assets/img/testimonial/x1.svg" alt="" />
-                          </div>
-                          <!-- <div class="testi-card_quote">
-                            <img src="assets/img/icon/quote_left.svg" alt="quote">
-                          </div> -->
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="1 / 4"
-                        data-swiper-slide-index="0"
-                        style="width: 540px; margin-right: 24px"
-                      >
-                        <div class="testi-card">
-                          <div class="testi-card-up">
-                            <p class="testi-card_text">
-                              “Five star he reinvent prospective metrics before
-                              granular schema. Professionally metrics before
-                              expedite client-centric methods of empow ment
-                              whereas effective gotoning.”
-                            </p>
-                            <div class="testi-card_profile">
-                              <!-- <div class="testi-card_avater">
-                              <img src="assets/img/testimonial/testi_1_4.jpg" alt="testimonial">
-                            </div> -->
-                              <div class="media-body">
-                                <h3 class="testi-card_name">Alexa Jenifer</h3>
-                                <span class="testi-card_desig"
-                                  >CEO at Morosto</span
-                                >
-                                <div>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="testi-card-down">
-                            <img src="assets/img/testimonial/x1.svg" alt="" />
-                          </div>
-                          <!-- <div class="testi-card_quote">
-                          <img src="assets/img/icon/quote_left.svg" alt="quote">
-                        </div> -->
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-prev"
-                        role="group"
-                        aria-label="2 / 4"
-                        data-swiper-slide-index="1"
-                        style="width: 540px; margin-right: 24px"
-                      >
-                        <div class="testi-card">
-                          <div class="testi-card-up">
-                            <p class="testi-card_text">
-                              “Five star he reinvent prospective metrics before
-                              granular schema. Professionally metrics before
-                              expedite client-centric methods of empow ment
-                              whereas effective gotoning.”
-                            </p>
-                            <div class="testi-card_profile">
-                              <!-- <div class="testi-card_avater">
-                                <img src="assets/img/testimonial/testi_1_4.jpg" alt="testimonial">
-                              </div> -->
-                              <div class="media-body">
-                                <h3 class="testi-card_name">Alexa Jenifer</h3>
-                                <span class="testi-card_desig"
-                                  >CEO at Morosto</span
-                                >
-                                <div>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="testi-card-down">
-                            <img src="assets/img/testimonial/x1.svg" alt="" />
-                          </div>
-                          <!-- <div class="testi-card_quote">
-                            <img src="assets/img/icon/quote_left.svg" alt="quote">
-                          </div> -->
-                        </div>
-                      </div>
-                      <div
-                        class="swiper-slide swiper-slide-active"
-                        role="group"
-                        aria-label="3 / 4"
-                        data-swiper-slide-index="2"
-                        style="width: 540px; margin-right: 24px"
-                      >
-                        <div class="testi-card">
-                          <div class="testi-card-up">
-                            <p class="testi-card_text">
-                              “Five star he reinvent prospective metrics before
-                              granular schema. Professionally metrics before
-                              expedite client-centric methods of empow ment
-                              whereas effective gotoning.”
-                            </p>
-                            <div class="testi-card_profile">
-                              <!-- <div class="testi-card_avater">
-                                <img src="assets/img/testimonial/testi_1_4.jpg" alt="testimonial">
-                              </div> -->
-                              <div class="media-body">
-                                <h3 class="testi-card_name">Alexa Jenifer</h3>
-                                <span class="testi-card_desig"
-                                  >CEO at Morosto</span
-                                >
-                                <div>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                  <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 14 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M7 0.277344L9.45224 3.90212L13.6574 5.11422L10.9678 8.56656L11.1145 12.9405L7 11.4493L2.8855 12.9405L3.03219 8.56656L0.342604 5.11422L4.54776 3.90212L7 0.277344Z"
-                                      fill="#FFCE22"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="testi-card-down">
-                            <img src="assets/img/testimonial/x1.svg" alt="" />
-                          </div>
-                          <!-- <div class="testi-card_quote">
-                            <img src="assets/img/icon/quote_left.svg" alt="quote">
-                          </div> -->
-                        </div>
-                      </div>
+              <div class="gallery-content">
+                <div class="media-left">
+                  <!-- <a
+                    href="assets/img/gallery/gallery_2_4.jpg"
+                    class="icon-btn popup-image"
+                    ><i class="fa-solid fa-arrow-up"></i></a> -->
+                    <div class="xeno-gallery">
+                      <h3>This is news</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloribus natus quas perspiciatis qui. Eius voluptatum omnis minima, ad doloribus, officia excepturi error quam doloremque neque laborum delectus vitae fuga.</p>
                     </div>
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
-                    ></span>
-                    <span
-                      class="swiper-notification"
-                      aria-live="assertive"
-                      aria-atomic="true"
-                    ></span>
-                  </div>
-                  <div class="testi-thumb-wrap">
-                    <div
-                      class="testi-thumb testi-card-tab"
-                      data-slider-tab="#testiSlide1"
-                    >
-                      <div class="tab-btn">
-                        <img
-                          src="assets/img/testimonial/testi_1_1.jpg"
-                          alt="Image"
-                        />
-                      </div>
-                      <div class="tab-btn active">
-                        <img
-                          src="assets/img/testimonial/testi_1_2.jpg"
-                          alt="Image"
-                        />
-                      </div>
-                      <div class="tab-btn">
-                        <img
-                          src="assets/img/testimonial/testi_1_3.jpg"
-                          alt="Image"
-                        />
-                      </div>
-                      <div class="tab-btn">
-                        <img
-                          src="assets/img/testimonial/testi_1_4.jpg"
-                          alt="Image"
-                        />
-                      </div>
-                      <!-- <span
-                        class="indicator"
-                        style="
-                          --height-set: 55.9896px;
-                          --width-set: 55.9896px;
-                          --pos-y: 247.38278198242188px;
-                          --pos-x: 0px;
-                        "
-                      ></span> -->
-                      <!-- <span class="indicator" style="--height-set: 56px; --width-set: 56px; --pos-y: 99.25px; --pos-x: 0px;"></span></div> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="nav-step5"
-              role="tabpanel"
-              aria-labelledby="nav-step5-tab"
-            >
-              <div class="choose-wrapper choose-wrapper-5">
-                <div class="choose-content-5">
-                  <h2>Our Echo in Numbers</h2>
-                  <p>
-                    We’re proud to work with a vast network of collaborators and
-                    innovators around the globe. From tech pioneers to local
-                    changemakers, Our Echo continues to grow stronger with every
-                    partnership.
-                  </p>
-                </div>
-                <div class="choose-content-stat-5">
-                  <div class="choose-content-stat-item">
-                    <h3>🚀 5M+</h3>
-                    <p>Global Users Engaged</p>
-                  </div>
-                  <div class="choose-content-stat-item-vertical">
-                    <svg
-                      width="3"
-                      height="121"
-                      viewBox="0 0 3 121"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <line
-                        x1="1.27148"
-                        y1="0.712891"
-                        x2="1.27148"
-                        y2="119.643"
-                        stroke="#C2EEFF"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M1.31445 37.9316L1.31445 82.4238"
-                        stroke="#0C8EC2"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </div>
-                  <div class="choose-content-stat-item">
-                    <h3>🌍 1.2M+</h3>
-                    <p>Community Contributions</p>
-                  </div>
-                  <div class="choose-content-stat-item-vertical">
-                    <svg
-                      width="3"
-                      height="121"
-                      viewBox="0 0 3 121"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <line
-                        x1="1.27148"
-                        y1="0.712891"
-                        x2="1.27148"
-                        y2="119.643"
-                        stroke="#C2EEFF"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M1.31445 37.9316L1.31445 82.4238"
-                        stroke="#0C8EC2"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </div>
-                  <div class="choose-content-stat-item">
-                    <h3>💼 250K+</h3>
-                    <p>Verified Collaborators</p>
-                  </div>
-                  <div class="choose-content-stat-item-vertical">
-                    <svg
-                      width="3"
-                      height="121"
-                      viewBox="0 0 3 121"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <line
-                        x1="1.27148"
-                        y1="0.712891"
-                        x2="1.27148"
-                        y2="119.643"
-                        stroke="#C2EEFF"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M1.31445 37.9316L1.31445 82.4238"
-                        stroke="#0C8EC2"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </div>
-                  <div class="choose-content-stat-item">
-                    <h3>🌟 99%</h3>
-                    <p>User Satisfaction</p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -4006,7 +1774,7 @@
               <p><i class="fas fa-envelope"></i> info@ourecho.co.uk</p>
               <p>
                 <i class="fas fa-map-marker-alt"></i> Penndene Tresearrett
-                Bodmin Cornwall PL30 4QF
+                Bodmin <br/> Cornwall PL30 4QF
               </p>
             </div>
             <!-- Social Icons Moved Below Contact Info -->
@@ -4024,7 +1792,7 @@
         <div class="row">
           <div class="col-12 text-center copyright">
             <p>
-              © 2025
+              &copy; 2025
               <a href="https://ourecho.co.uk/home_page#" target="_blank"
                 >Our Echo</a
               >
@@ -4147,6 +1915,46 @@
             box.classList.add("active");
             // Show the inner content of the clicked box
             box.querySelector(".xeno-service-box-inner").style.display = "flex";
+          });
+        });
+      });
+    </script>
+    <script>
+      // Highlight active navigation item on scroll
+      document.addEventListener('DOMContentLoaded', function() {
+        // Target only the specific divs that are navigation targets
+        const navTargets = [
+          'home-xeno-main',
+          'about-xeno',
+          'team-xeno',
+          'service-xeno',
+          'news-xeno',
+          'contact-xeno'
+        ];
+        
+        const navLinks = document.querySelectorAll('.main-menu .nav-item a');
+
+        window.addEventListener('scroll', function() {
+          let current = '';
+          
+          // Check each navigation target
+          navTargets.forEach(targetId => {
+            const element = document.getElementById(targetId);
+            if (element) {
+              const rect = element.getBoundingClientRect();
+              // Check if element is in viewport
+              if (rect.top <= 100 && rect.bottom >= 100) {
+                current = '#' + targetId;
+              }
+            }
+          });
+
+          // Update active state of navigation links
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === current) {
+              link.classList.add('active');
+            }
           });
         });
       });
